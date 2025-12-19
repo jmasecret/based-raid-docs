@@ -22,47 +22,25 @@ After your target is met, there's a mandatory waiting period:
 | Verified  | 30 minutes  | Trusted creators, faster access |
 | Standard  | 1 hour      | Protection against quick rugs   |
 
+---
+
 ## How to Withdraw
 
 ### From Raid Card
 
-{% stepper %}
-{% step %}
-Go to the **🎯 Awaiting** tab.
-{% endstep %}
-
-{% step %}
-Find your raid.
-{% endstep %}
-
-{% step %}
-Wait for the countdown to finish.
-{% endstep %}
-
-{% step %}
-Click **"Withdraw Funds"**.
-{% endstep %}
-
-{% step %}
-Approve the transaction.
-{% endstep %}
-{% endstepper %}
+1. Go to the **🎯 Awaiting** tab
+2. Find your raid
+3. Wait for the countdown to finish
+4. Click **"Withdraw Funds"**
+5. Approve the transaction
 
 ### From Raid Details
 
-{% stepper %}
-{% step %}
-Click on your raid card.
-{% endstep %}
+1. Click on your raid card
+2. Click **"Withdraw Funds"** in the modal
+3. Approve the transaction
 
-{% step %}
-Click **"Withdraw Funds"** in the modal.
-{% endstep %}
-
-{% step %}
-Approve the transaction.
-{% endstep %}
-{% endstepper %}
+---
 
 ## Platform Fees
 
@@ -73,11 +51,15 @@ A platform fee is deducted from withdrawals:
 | Verified  | 3%  | You receive 9.7 SOL     |
 | Standard  | 5%  | You receive 9.5 SOL     |
 
+---
+
 ## After Withdrawal
 
 * Funds are transferred to your wallet immediately
 * Raid moves to **📜 History** tab
 * Raid is marked as "Withdrawn"
+
+---
 
 ## Important Notes
 

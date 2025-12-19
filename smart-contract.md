@@ -1,12 +1,12 @@
 # Smart Contract
 
-Technical reference for the BandAid smart contract on Solana.
+Technical reference for the BasedRaid smart contract on Solana.
 
 ## Overview
 
 | Property       | Value                                          |
 | -------------- | ---------------------------------------------- |
-| **Network**    | Solana Mainnet                                 |
+| **Network**    | Solana Devnet                                  |
 | **Program ID** | `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE` |
 | **Framework**  | Anchor                                         |
 | **Language**   | Rust                                           |
@@ -20,9 +20,9 @@ Technical reference for the BandAid smart contract on Solana.
 | `MAX_DEADLINE_DURATION`     | 30 days  | Maximum time until deadline    |
 | `WITHDRAWAL_DELAY_STANDARD` | 1 hour   | Lock period for standard raids |
 | `WITHDRAWAL_DELAY_VERIFIED` | 30 min   | Lock period for verified raids |
-| `BASE_FEE`                  | 0.05 SOL | Creation fee                   |
-| `VERIFIED_FEE`              | 0.5 SOL  | Verified badge cost            |
-| `PROMOTED_FEE`              | 0.25 SOL | Promotion cost                 |
+| `BASE_FEE`                  | 0.02 SOL | Creation fee                   |
+| `VERIFIED_FEE`              | 0.1 SOL  | Verified badge cost            |
+| `PROMOTED_FEE`              | 0.05 SOL | Trending boost cost            |
 
 ## Account Structures
 
@@ -61,13 +61,11 @@ pub struct Donation {
 
 ## Instructions
 
-{% stepper %}
-{% step %}
-### initialize\_raid
+### initialize_raid
 
 Creates a new raid.
 
-Parameters:
+**Parameters:**
 
 * `raid_id`: u64 - Unique ID
 * `contract_address`: Pubkey - Token CA
@@ -82,65 +80,55 @@ Parameters:
 * `is_promoted`: bool - Pay for promotion
 
 {% hint style="info" %}
-Validation rules implied by constants and errors:
-
-* Deadline must be in the future and within `MAX_DEADLINE_DURATION`.
-* `target_amount` must be between `MIN_TARGET_AMOUNT` and `MAX_TARGET_AMOUNT`.
+Deadline must be in the future and within `MAX_DEADLINE_DURATION`. Target amount must be between `MIN_TARGET_AMOUNT` and `MAX_TARGET_AMOUNT`.
 {% endhint %}
-{% endstep %}
 
-{% step %}
+---
+
 ### donate
 
 Donates SOL to a raid.
 
-Parameters:
-
+**Parameters:**
 * `amount`: u64 - Amount in lamports
 
-{% hint style="info" %}
-Requirements:
-
+**Requirements:**
 * Raid not expired
 * Raid target not met
-{% endhint %}
-{% endstep %}
 
-{% step %}
-### withdraw\_funds
+---
+
+### withdraw_funds
 
 Withdraws funds after target is met.
 
-Requirements:
-
+**Requirements:**
 * Caller is creator
 * Target is met
 * Lock period has passed
 * Not already withdrawn
 
 {% hint style="warning" %}
-Note: Lock period depends on whether raid is verified (`WITHDRAWAL_DELAY_VERIFIED`) or standard (`WITHDRAWAL_DELAY_STANDARD`).
+Lock period depends on whether raid is verified (30 min) or standard (1 hour).
 {% endhint %}
-{% endstep %}
 
-{% step %}
-### cancel\_raid
+---
+
+### cancel_raid
 
 Cancels a raid and returns rent.
 
-Requirements:
-
+**Requirements:**
 * Caller is creator
 * No donations received
-{% endstep %}
 
-{% step %}
+---
+
 ### refund
 
 Claims refund from failed raid.
 
-Requirements:
-
+**Requirements:**
 * Raid expired
 * Target not met
 * Caller made donation
@@ -148,18 +136,16 @@ Requirements:
 {% hint style="success" %}
 Refunds are 100% to donors (0% fee).
 {% endhint %}
-{% endstep %}
-{% endstepper %}
 
 ## Fee Structure
 
 ### Creation Fees
 
-| Type       | Cost      |
-| ---------- | --------- |
-| Base       | 0.05 SOL  |
-| + Verified | +0.5 SOL  |
-| + Promoted | +0.25 SOL |
+| Type           | Cost      |
+| -------------- | --------- |
+| Base Creation  | 0.02 SOL  |
+| + Verified     | +0.1 SOL  |
+| + Trending     | +0.05 SOL |
 
 ### Withdrawal Fees
 

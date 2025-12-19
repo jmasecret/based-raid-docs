@@ -1,12 +1,16 @@
 # Getting Started
 
-## Getting Started
-
 This guide will help you get started with BasedRaid on Solana Devnet.
 
-### Prerequisites
+{% hint style="warning" %}
+**🚧 DEVNET PHASE**
 
-#### 1. Install a Solana Wallet
+BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**. You do NOT need to spend real money to use BasedRaid!
+{% endhint %}
+
+## Prerequisites
+
+### 1. Install a Solana Wallet
 
 You'll need a Solana-compatible wallet. We recommend:
 
@@ -14,39 +18,72 @@ You'll need a Solana-compatible wallet. We recommend:
 * [Solflare](https://solflare.com/)
 * [Backpack](https://backpack.app/)
 
-#### 2. Fund Your Wallet
+### 2. Switch Wallet to Devnet
 
-You'll need **real SOL** in your wallet to:
+{% hint style="info" %}
+Your wallet defaults to Mainnet. You must switch to Devnet to use BasedRaid.
+{% endhint %}
 
-* Create raids (0.02 SOL + optional boosts)
-* Donate to raids
-* Pay transaction fees (\~0.00001 SOL per tx)
+**For Phantom:**
 
-**Get SOL from:**
+* Click the gear icon (Settings)
+* Scroll to "Developer Settings"
+* Enable "Testnet Mode"
+* Select "Devnet" as the network
 
-* Any major exchange (Coinbase, Binance, Kraken, etc.)
-* Transfer from another wallet
+**For Solflare:**
 
-### Connect to BasedRaid
+* Click Settings → Network
+* Select "Devnet"
 
-1. Visit the BasedRaid app
-2. Click **"Connect Wallet"** in the top right
-3. Select your wallet provider
-4. Approve the connection
+### 3. Get Free Test SOL
 
-### What's Next?
+Visit the [Solana Faucet](https://faucet.solana.com/) to get free Devnet SOL:
+
+* Copy your wallet address
+* Paste it into the faucet
+* Click "Request Airdrop"
+* You'll receive 1-2 SOL instantly (free!)
+
+{% hint style="success" %}
+**It's free!** Devnet SOL has no real value. You can request more anytime.
+{% endhint %}
+
+## Connect to BasedRaid
+
+To connect your wallet:
+
+* Visit the BasedRaid app
+* Click **"Connect Wallet"** in the top right
+* Select your wallet provider
+* Approve the connection
+
+## What's Next?
 
 | Goal                 | Guide             |
 | -------------------- | ----------------- |
 | Support a raid       | Donating to Raids |
 | Create your own raid | Creating Raids    |
+| Withdraw funds       | Withdrawals       |
 | Claim a refund       | Refunds           |
 | Understand security  | Security          |
 
-### Important Notes
+## Important Notes
 
-> ⚠️ **Real Money**: All transactions on BasedRaid use real SOL. Make sure you understand how the platform works before creating or donating to raids.
+{% hint style="warning" %}
+**Devnet Only**
 
-> 🔒 **Non-Custodial**: BasedRaid never has access to your funds. All funds are held in on-chain vaults (PDAs) controlled by smart contract logic.
+BasedRaid currently runs on Devnet. All SOL is test currency with no real value.
+{% endhint %}
 
-> 💡 **Do Your Research**: Always verify the legitimacy of a raid before donating. Check the creator's history and the linked token contract.
+{% hint style="info" %}
+**Non-Custodial**
+
+BasedRaid never has access to your funds. All funds are held in on-chain vaults (PDAs) controlled by smart contract logic.
+{% endhint %}
+
+{% hint style="info" %}
+**Do Your Research**
+
+Always verify the legitimacy of a raid before donating. Check the creator's history and the linked token contract.
+{% endhint %}

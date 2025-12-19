@@ -1,30 +1,14 @@
 # Donating
 
-This guide explains how to donate SOL to raids on BandAid.
+This guide explains how to donate SOL to raids on BasedRaid.
 
 ## Finding Raids
 
 ### Browse Active Raids
 
-{% stepper %}
-{% step %}
-### Connect your wallet
-
-Connect your wallet.
-{% endstep %}
-
-{% step %}
-### Navigate to the ⚡ Active tab
-
-Open the app and go to the Active tab.
-{% endstep %}
-
-{% step %}
-### Browse available raids
-
-Browse available raid cards to find opportunities to donate.
-{% endstep %}
-{% endstepper %}
+1. Connect your wallet
+2. Navigate to the **⚡ Active** tab
+3. Browse available raid cards to find opportunities to donate
 
 ### Search & Filter
 
@@ -39,43 +23,24 @@ Use filters to show only:
 * ✓ **Verified** raids
 * 🔥 **Trending** raids
 
+---
+
 ## Making a Donation
 
 ### Quick Donate
 
-{% stepper %}
-{% step %}
-Click on any raid card.
-{% endstep %}
-
-{% step %}
-Enter your donation amount in SOL.
-{% endstep %}
-
-{% step %}
-Click "Donate".
-{% endstep %}
-
-{% step %}
-Approve the transaction in your wallet.
-{% endstep %}
-{% endstepper %}
+1. Click on any raid card
+2. Enter your donation amount in SOL
+3. Click "Donate"
+4. Approve the transaction in your wallet
 
 ### From Raid Details
 
-{% stepper %}
-{% step %}
-Click a raid card to open details.
-{% endstep %}
+1. Click a raid card to open details
+2. View full description and progress
+3. Enter amount and click "Donate"
 
-{% step %}
-View full description and progress.
-{% endstep %}
-
-{% step %}
-Enter amount and click "Donate".
-{% endstep %}
-{% endstepper %}
+---
 
 ## After Donating
 
@@ -85,36 +50,28 @@ Your donation is:
 * Stored on-chain in a PDA vault
 * Trackable in the **💰 My Donations** tab
 
+---
+
 ## What Happens to Your Donation?
 
-<details>
-
-<summary>If Target is Met ✅</summary>
-
+**If Target is Met ✅**
 * Creator can withdraw after lock period
 * Your donation helps complete the CTO
 
-</details>
-
-<details>
-
-<summary>If Target is Not Met ❌</summary>
-
+**If Target is Not Met ❌**
 * After deadline passes, raid moves to "Claim Refund"
 * You get **100% of your donation back** (no fees)
 * Claim in the **🔄 Claim Refund** tab
 
-</details>
+---
 
 ## Understanding Risk
 
 {% hint style="warning" %}
-⚠️ Important: Once a raid target is met and the lock period expires, the creator can withdraw funds. Only donate to raids you trust.
+**Important**: Once a raid target is met and the lock period expires, the creator can withdraw funds. Only donate to raids you trust.
 {% endhint %}
 
-<details>
-
-<summary>What to check before donating</summary>
+**What to check before donating:**
 
 * Creator's history (look for trust badges)
 * Verified badge (lower fees = more serious creator)
@@ -122,13 +79,13 @@ Your donation is:
 * Raid description and goals
 * Contract address legitimacy
 
-</details>
+---
 
 ## Donation Limits
 
-* **Minimum**: No minimum (but gas fees \~0.00001 SOL)
+* **Minimum**: No minimum (but gas fees ~0.00001 SOL)
 * **Maximum**: No maximum
 
 ## Transaction Fees
 
-Donations incur minimal Solana transaction fees (\~0.00001 SOL per tx).
+Donations incur minimal Solana transaction fees (~0.00001 SOL per tx).

@@ -1,6 +1,6 @@
 # Creator Incentives
 
-BandAid rewards verified creators and tracks reputation to build trust in the ecosystem.
+BasedRaid rewards verified creators and tracks reputation to build trust in the ecosystem.
 
 ## Verified Badge Benefits
 
@@ -14,7 +14,7 @@ BandAid rewards verified creators and tracks reputation to build trust in the ec
 {% hint style="info" %}
 **Cost**
 
-* **Verified Badge**: 0.5 SOL (one-time, per raid)
+* **Verified Badge**: 0.1 SOL (one-time, per raid)
 {% endhint %}
 
 ## Promoted Raids
@@ -28,7 +28,7 @@ BandAid rewards verified creators and tracks reputation to build trust in the ec
 {% hint style="info" %}
 **Cost**
 
-* **Promote to Trending**: 0.25 SOL (one-time, per raid)
+* **Trending Boost**: 0.05 SOL (one-time, per raid)
 {% endhint %}
 
 ## Creator Reputation System
@@ -70,34 +70,8 @@ Track record is displayed on each raid to help donors make informed decisions.
 
 ## Building Your Reputation
 
-{% stepper %}
-{% step %}
-### Start small
-
-Create achievable target amounts.
-{% endstep %}
-
-{% step %}
-### Be transparent
-
-Provide clear descriptions and goals.
-{% endstep %}
-
-{% step %}
-### Get verified
-
-Obtain the verified badge to show commitment.
-{% endstep %}
-
-{% step %}
-### Deliver results
-
-Complete successful raids to improve success rate.
-{% endstep %}
-
-{% step %}
-### Engage community
-
-Share progress updates and keep donors informed.
-{% endstep %}
-{% endstepper %}
+1. **Start small** - Create achievable target amounts
+2. **Be transparent** - Provide clear descriptions and goals
+3. **Get verified** - Obtain the verified badge to show commitment
+4. **Deliver results** - Complete successful raids to improve success rate
+5. **Engage community** - Share progress updates and keep donors informed

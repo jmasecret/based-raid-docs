@@ -1,9 +1,9 @@
 # Security
 
-BandAid is built with security as a top priority. This document explains the security measures in place.
+BasedRaid is built with security as a top priority. This document explains the security measures in place.
 
 {% hint style="info" %}
-This page describes BandAid's security model, protections for donors and creators, smart contract safeguards, and responsible reporting procedures.
+This page describes BasedRaid's security model, protections for donors and creators, smart contract safeguards, and responsible reporting procedures.
 {% endhint %}
 
 ## Trustless Architecture
@@ -65,7 +65,7 @@ The treasury address is hardcoded in the contract—no one can redirect fees.
 
 All functions follow the secure CEI pattern to prevent reentrancy.
 
-## What BandAid Cannot Do
+## What BasedRaid Cannot Do
 
 * ❌ Access your wallet funds
 * ❌ Modify smart contract behavior
@@ -77,59 +77,17 @@ All functions follow the secure CEI pattern to prevent reentrancy.
 
 ### For Donors
 
-{% stepper %}
-{% step %}
-### Verify the token
-
-Check the contract address on a block explorer.
-{% endstep %}
-
-{% step %}
-### Check creator history
-
-Look for trust badges.
-{% endstep %}
-
-{% step %}
-### Start small
-
-Don't put all funds in one raid.
-{% endstep %}
-
-{% step %}
-### Do your research
-
-Join the community, verify socials.
-{% endstep %}
-{% endstepper %}
+1. **Verify the token** - Check the contract address on a block explorer
+2. **Check creator history** - Look for trust badges
+3. **Start small** - Don't put all funds in one raid
+4. **Do your research** - Join the community, verify socials
 
 ### For Creators
 
-{% stepper %}
-{% step %}
-### Be transparent
-
-Clearly explain your goals.
-{% endstep %}
-
-{% step %}
-### Provide proof
-
-Link socials and verify identity.
-{% endstep %}
-
-{% step %}
-### Set realistic targets
-
-Build trust with smaller raids first.
-{% endstep %}
-
-{% step %}
-### Communicate
-
-Keep your community updated.
-{% endstep %}
-{% endstepper %}
+1. **Be transparent** - Clearly explain your goals
+2. **Provide proof** - Link socials and verify identity
+3. **Set realistic targets** - Build trust with smaller raids first
+4. **Communicate** - Keep your community updated
 
 ## Reporting Issues
 

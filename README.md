@@ -4,6 +4,15 @@
 
 Welcome to the BasedRaid documentation. BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on Solana.
 
+
+{% hint style="warning" %}
+**🚧 DEVNET PHASE**
+
+BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**.
+
+To get started, switch your wallet to Devnet and get free test SOL from the [Solana Faucet](https://faucet.solana.com/).
+{% endhint %}
+
 ### What is BasedRaid?
 
 BasedRaid allows communities to raise funds for token recovery efforts through a secure, trustless system:
@@ -24,6 +33,8 @@ BasedRaid allows communities to raise funds for token recovery efforts through a
 | Tiered Fees         | 3% for verified, 5% for standard              |
 | Withdrawal Lock     | 30min for verified, 1hr for standard          |
 | Creator Reputation  | Track record with trust badges                |
+| Real-Time Sync      | Pump.fun-style instant updates across tabs    |
+| Mobile Help Icons   | Tap (?) to explain any technical term         |
 | Progress Animations | Visual feedback at milestones (25%, 50%, 75%) |
 | Shareable Links     | Direct links to individual raids              |
 | Social Sharing      | One-click share to X/Twitter                  |
@@ -47,7 +58,7 @@ BasedRaid allows communities to raise funds for token recovery efforts through a
 * **Network**: Solana Devnet
 * **Program ID**: `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE`
 
-> ⚠️ **Important**: This is a live application on Solana Devnet. All transactions use real SOL.
+> ⚠️ **Important**: This is a live application on Solana Devnet. All transactions use test SOL (no real value).
 
 ### Recent Updates
 

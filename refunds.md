@@ -10,49 +10,24 @@ Refunds become available when:
 * ❌ Target amount was NOT met
 * ✅ You have an active donation to the raid
 
+---
+
 ## Finding Refundable Raids
 
-{% stepper %}
-{% step %}
-### Find refundable raids
+1. Go to the **🔄 Refund** tab
+2. You'll see all failed raids where you have unclaimed refunds
+3. Your donation amount is shown on each card
 
-Go to the **Refund** tab.
-{% endstep %}
-
-{% step %}
-### View failed raids with your refunds
-
-You'll see all failed raids where you have unclaimed refunds. Your donation amount is shown on each card.
-{% endstep %}
-{% endstepper %}
+---
 
 ## Claiming a Refund
 
-{% stepper %}
-{% step %}
-### Locate the raid
+1. Find the raid in the Refund tab
+2. Click the **"Claim Refund"** button
+3. Approve the transaction in your wallet
+4. Funds return to your wallet immediately
 
-Find the raid in the Refund tab.
-{% endstep %}
-
-{% step %}
-### Claim the refund
-
-Click the "Claim Refund" button.
-{% endstep %}
-
-{% step %}
-### Approve the transaction
-
-Approve the transaction in your wallet.
-{% endstep %}
-
-{% step %}
-### Receive funds
-
-Funds return to your wallet.
-{% endstep %}
-{% endstepper %}
+---
 
 ## Refund Amounts
 
@@ -62,6 +37,8 @@ Funds return to your wallet.
 | You Receive  | **100%** |
 
 Refunds have NO fees deducted. You get back exactly what you donated.
+
+---
 
 ## Refund Tracking
 
@@ -81,6 +58,8 @@ Shows all raids you've donated to, including:
 | **Available** | Raid failed, you can claim      |
 | **Claimed**   | You already claimed your refund |
 | **N/A**       | Raid still active or succeeded  |
+
+---
 
 ## Important Notes
 
