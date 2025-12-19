@@ -103,6 +103,7 @@ Withdraws funds after target is met.
 - Target is met
 - Lock period has passed
 - Not already withdrawn
+- **Raid NOT aborted by community vote**
 
 ### ❌ cancel_raid
 
@@ -114,16 +115,32 @@ Cancels a raid and returns rent.
 
 ### 🔄 refund
 
-Claims refund from failed raid.
+Claims refund from failed or aborted raid.
 
 **Requirements:**
-- Raid expired
-- Target not met
+- Raid expired AND target not met, **OR**
+- **Raid was aborted by community vote**
 - Caller made donation
 
 {% hint style="success" %}
 **Refunds are 100%** - Donors receive full amount back with 0% fee.
 {% endhint %}
+
+### 🗳️ vote_abort
+
+Votes to abort a raid during the time-lock period.
+
+**Requirements:**
+- Target is met
+- Within time-lock window (before withdrawal unlocks)
+- Caller made donation
+- Not already voted
+- Raid not already aborted
+
+**Effect:**
+- Adds donor's donation amount to abort vote tally
+- If 51%+ of raised SOL votes abort, raid is marked aborted
+- Aborted raids enable refunds for all donors
 
 ## 💰 Fee Structure
 
@@ -163,6 +180,11 @@ Claims refund from failed raid.
 | `WithdrawalTooEarly` | Lock period not finished |
 | `CannotCancelWithDonations` | Cannot cancel with donations |
 | `Unauthorized` | Not authorized for this action |
+| `RaidAborted` | Raid aborted by community vote |
+| `RaidAlreadyAborted` | Raid was already aborted |
+| `AlreadyVoted` | Already voted to abort |
+| `VotingWindowClosed` | Time-lock expired, voting closed |
+| `RefundNotAvailable` | Refund not available yet |
 
 ## 📡 Events
 
@@ -173,3 +195,5 @@ Claims refund from failed raid.
 | `FundsWithdrawn` | Creator withdraws |
 | `RefundClaimed` | Donor claims refund |
 | `RaidCancelled` | Creator cancels raid |
+| `AbortVoteCast` | Donor votes to abort |
+| `RaidAborted` | 51%+ voted to abort |

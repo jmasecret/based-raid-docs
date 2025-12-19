@@ -31,6 +31,7 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 | 🔄 **Claimable Refunds** | 100% refund if target not met |
 | 💸 **Tiered Fees** | 3% for verified, 5% for standard |
 | ⏰ **Withdrawal Lock** | 30min for verified, 1hr for standard |
+| 🗳️ **Community Abort Vote** | 51% majority can abort during time-lock |
 | 🏆 **Creator Reputation** | Track record with trust badges |
 | 🔴 **Real-Time Sync** | Pump.fun-style instant updates |
 | ❓ **Mobile Help Icons** | Tap (?) to explain any technical term |
@@ -65,6 +66,7 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 | 💸 [Donating](donating.md) | Support community takeovers |
 | 💵 [Withdrawals](withdrawals.md) | Claim your raised funds |
 | 🔄 [Refunds](refunds.md) | Get refunds from failed raids |
+| 🗳️ [Community Abort Vote](community-abort-vote.md) | Vote to abort suspicious raids |
 | 🏆 [Creator Incentives](creator-incentives.md) | Unlock premium features |
 | 🔒 [Security](security.md) | Understand how funds are protected |
 | ⚙️ [Smart Contract](smart-contract.md) | Technical reference |
