@@ -14,9 +14,9 @@ BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SO
 
 You'll need a Solana-compatible wallet. We recommend:
 
-* [Phantom](https://phantom.app/) (Most popular)
-* [Solflare](https://solflare.com/)
-* [Backpack](https://backpack.app/)
+1. [Phantom](https://phantom.app/) (Most popular)
+2. [Solflare](https://solflare.com/)
+3. [Backpack](https://backpack.app/)
 
 ### 2. Switch Wallet to Devnet
 
@@ -26,37 +26,36 @@ Your wallet defaults to Mainnet. You must switch to Devnet to use BasedRaid.
 
 **For Phantom:**
 
-* Click the gear icon (Settings)
-* Scroll to "Developer Settings"
-* Enable "Testnet Mode"
-* Select "Devnet" as the network
+1. Click the gear icon (Settings)
+2. Scroll to "Developer Settings"
+3. Enable "Testnet Mode"
+4. Select "Devnet" as the network
 
 **For Solflare:**
 
-* Click Settings → Network
-* Select "Devnet"
+1. Click Settings → Network
+2. Select "Devnet"
 
 ### 3. Get Free Test SOL
 
 Visit the [Solana Faucet](https://faucet.solana.com/) to get free Devnet SOL:
 
-* Copy your wallet address
-* Paste it into the faucet
-* Click "Request Airdrop"
-* You'll receive 1-2 SOL instantly (free!)
+1. Copy your wallet address
+2. Paste it into the faucet
+3. Click "Request Airdrop"
+4. You'll receive 1-2 SOL instantly (free!)
 
 {% hint style="success" %}
 **It's free!** Devnet SOL has no real value. You can request more anytime.
 {% endhint %}
 
+
 ## Connect to BasedRaid
 
-To connect your wallet:
-
-* Visit the BasedRaid app
-* Click **"Connect Wallet"** in the top right
-* Select your wallet provider
-* Approve the connection
+1. Visit the BasedRaid app
+2. Click **"Connect Wallet"** in the top right
+3. Select your wallet provider
+4. Approve the connection
 
 ## What's Next?
 
