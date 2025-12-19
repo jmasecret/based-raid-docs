@@ -1,62 +1,85 @@
-# Introduction
+# 🧊 BasedRaid Documentation
 
-## BasedRaid Documentation
+Welcome to the official BasedRaid documentation!
 
-Welcome to the BasedRaid documentation. BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on Solana.
+{% hint style="warning" %}
+**🚧 DEVNET PHASE**
 
-### What is BasedRaid?
+BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**.
 
-BasedRaid allows communities to raise funds for token recovery efforts through a secure, trustless system:
+To get started, switch your wallet to Devnet and get free test SOL from the [Solana Faucet](https://faucet.solana.com/).
+{% endhint %}
 
-* 💰 **Funds are held in a vault (PDA)** - Not controlled by the creator
-* 🎯 **Target-based release** - Funds only released when target is met
-* 💸 **Claimable refunds** - If target isn't met by deadline, donors can claim 100% refund
-* ✅ **Verified creators** - Lower fees and faster withdrawals for verified raids
-* 🔗 **Shareable links** - Every raid has a unique shareable URL
-* 🏆 **Top donors leaderboard** - Recognition for top contributors
+## 🎯 What is BasedRaid?
 
-### Key Features
+BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on Solana.
 
-| Feature             | Description                                   |
-| ------------------- | --------------------------------------------- |
-| Trustless Vault     | Funds held in PDAs, not creator wallets       |
-| Claimable Refunds   | 100% refund if target not met (donors claim)  |
-| Tiered Fees         | 3% for verified, 5% for standard              |
-| Withdrawal Lock     | 30min for verified, 1hr for standard          |
-| Creator Reputation  | Track record with trust badges                |
-| Progress Animations | Visual feedback at milestones (25%, 50%, 75%) |
-| Shareable Links     | Direct links to individual raids              |
-| Social Sharing      | One-click share to X/Twitter                  |
-| Top Donors          | Leaderboard showing top 5 contributors        |
-| Optimistic UI       | Instant feedback with blockchain confirmation |
+| Feature | Description |
+| ------- | ----------- |
+| 💰 **Trustless Vaults** | Funds held in PDAs, not creator wallets |
+| 🎯 **Target-Based Release** | Funds only released when target is met |
+| 💸 **100% Refunds** | Full refund if target isn't met (no fees) |
+| ✅ **Verified Creators** | Lower fees and faster withdrawals |
+| 🔗 **Shareable Links** | Every raid has a unique URL |
+| 🏆 **Top Donors Leaderboard** | Recognition for top contributors |
 
-### Quick Links
+## ⚡ Key Features
 
-* Getting Started
-* Creating Raids
-* Donating to Raids
-* Withdrawals
-* Refunds
-* Shareable Links
-* Creator Incentives
-* Security
-* Smart Contract Reference
+| Feature | Description |
+| ------- | ----------- |
+| 🔒 **Trustless Vault** | Funds held in PDAs, not creator wallets |
+| 🔄 **Claimable Refunds** | 100% refund if target not met |
+| 💸 **Tiered Fees** | 3% for verified, 5% for standard |
+| ⏰ **Withdrawal Lock** | 30min for verified, 1hr for standard |
+| 🏆 **Creator Reputation** | Track record with trust badges |
+| 🔴 **Real-Time Sync** | Pump.fun-style instant updates |
+| ❓ **Mobile Help Icons** | Tap (?) to explain any technical term |
+| 📊 **Progress Animations** | Visual feedback at 25%, 50%, 75% |
+| 🔗 **Shareable Links** | Direct links to individual raids |
+| 🐦 **Social Sharing** | One-click share to X/Twitter |
+| 🏆 **Top Donors** | Leaderboard showing top 5 contributors |
+| ⚡ **Optimistic UI** | Instant feedback with blockchain confirmation |
 
-### Network
+## 🌐 Network Info
 
-* **Network**: Solana Devnet
-* **Program ID**: `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE`
+| Property | Value |
+| -------- | ----- |
+| 🌐 **Network** | Solana Devnet |
+| 🔑 **Program ID** | `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE` |
 
-> ⚠️ **Important**: This is a live application on Solana Devnet. All transactions use real SOL.
+## 💰 Fee Structure
 
-### Recent Updates
+| Fee Type | Amount |
+| -------- | ------ |
+| 📦 **Creation Fee** | 0.02 SOL |
+| ✅ **Verified Badge** | 0.1 SOL |
+| 🔥 **Trending Boost** | 0.05 SOL |
+| 💸 **Withdrawal Fee** | 5% (3% verified) |
 
-#### December 2025
+## 📚 Quick Links
 
-* ✨ **Shareable Raid Links** - Every raid now has a unique URL at `/raid/[id]`
-* 🐦 **Share to X/Twitter** - One-click social sharing with pre-filled raid details
-* 🏆 **Top Donors Leaderboard** - See top 5 contributors on raid detail pages
-* 📊 **Progress Milestones** - Visual animations at 25%, 50%, and 75% progress
-* ⚡ **Optimistic UI** - Instant visual feedback before blockchain confirmation
-* 🔒 **Rate Limiting** - Protection against accidental double-clicks
-* 🎨 **Enhanced UX** - Loading spinners, better error handling, improved feedback
+| Guide | Description |
+| ----- | ----------- |
+| 🚀 [Getting Started](getting-started.md) | Set up your wallet and get test SOL |
+| 🎯 [Creating Raids](creating-raids.md) | Launch your own fundraising campaign |
+| 💸 [Donating](donating.md) | Support community takeovers |
+| 💵 [Withdrawals](withdrawals.md) | Claim your raised funds |
+| 🔄 [Refunds](refunds.md) | Get refunds from failed raids |
+| 🏆 [Creator Incentives](creator-incentives.md) | Unlock premium features |
+| 🔒 [Security](security.md) | Understand how funds are protected |
+| ⚙️ [Smart Contract](smart-contract.md) | Technical reference |
+
+## 🆕 Recent Updates
+
+### December 2025
+
+| Update | Description |
+| ------ | ----------- |
+| 🔴 **Real-Time Sync** | Pump.fun-style instant updates via WebSocket |
+| ❓ **Mobile Help Icons** | Tap (?) to explain technical terms |
+| ✨ **Shareable Raid Links** | Every raid now has a unique URL |
+| 🐦 **Share to X/Twitter** | One-click social sharing |
+| 🏆 **Top Donors Leaderboard** | See top 5 contributors |
+| 📊 **Progress Milestones** | Visual animations at 25%, 50%, 75% |
+| ⚡ **Optimistic UI** | Instant visual feedback |
+| 🔒 **Rate Limiting** | Protection against double-clicks |

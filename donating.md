@@ -1,134 +1,123 @@
-# Donating
+# 💸 Donating to Raids
 
-This guide explains how to donate SOL to raids on BandAid.
+Support community takeovers by donating SOL to raids you believe in!
 
-## Finding Raids
+## 🔍 Finding Raids
 
 ### Browse Active Raids
 
 {% stepper %}
 {% step %}
-### Connect your wallet
+**🔗 Connect Wallet**
 
-Connect your wallet.
+Connect your Solana wallet to BasedRaid
 {% endstep %}
 
 {% step %}
-### Navigate to the ⚡ Active tab
+**⚡ Go to Active Tab**
 
-Open the app and go to the Active tab.
+Navigate to the Active tab to see all live raids
 {% endstep %}
 
 {% step %}
-### Browse available raids
+**🔍 Browse & Filter**
 
-Browse available raid cards to find opportunities to donate.
+Use search and filters to find raids that interest you
 {% endstep %}
 {% endstepper %}
 
-### Search & Filter
+### 🔎 Search & Filter Options
 
-Use the search bar to find raids by:
+| Filter | Description |
+| ------ | ----------- |
+| 🔍 **Search** | Find by ticker, title, or contract address |
+| ✅ **Verified Only** | Show only verified creator raids |
+| 🔥 **Trending Only** | Show promoted/trending raids |
 
-* Token ticker (e.g., "$BONK")
-* Raid title
-* Contract address
-
-Use filters to show only:
-
-* ✓ **Verified** raids
-* 🔥 **Trending** raids
-
-## Making a Donation
-
-### Quick Donate
+## 💰 Making a Donation
 
 {% stepper %}
 {% step %}
-Click on any raid card.
+**🎯 Select a Raid**
+
+Click on any raid card to open the details
 {% endstep %}
 
 {% step %}
-Enter your donation amount in SOL.
+**💵 Enter Amount**
+
+Type the amount of SOL you want to donate
 {% endstep %}
 
 {% step %}
-Click "Donate".
+**🚀 Click Donate**
+
+Hit the "Donate" button to proceed
 {% endstep %}
 
 {% step %}
-Approve the transaction in your wallet.
+**✅ Approve Transaction**
+
+Confirm the transaction in your wallet
 {% endstep %}
 {% endstepper %}
 
-### From Raid Details
+{% hint style="success" %}
+**Instant Confirmation**
 
-{% stepper %}
-{% step %}
-Click a raid card to open details.
-{% endstep %}
+Your donation is immediately reflected in the progress bar and stored on-chain!
+{% endhint %}
 
-{% step %}
-View full description and progress.
-{% endstep %}
-
-{% step %}
-Enter amount and click "Donate".
-{% endstep %}
-{% endstepper %}
-
-## After Donating
+## 📊 After Donating
 
 Your donation is:
 
-* Immediately reflected in the progress bar
-* Stored on-chain in a PDA vault
-* Trackable in the **💰 My Donations** tab
+| Status | Description |
+| ------ | ----------- |
+| 📈 **Progress Updated** | Immediately reflected in the progress bar |
+| 🔒 **Stored On-Chain** | Held securely in a PDA vault |
+| 📋 **Trackable** | Visible in your **💰 My Donations** tab |
 
-## What Happens to Your Donation?
+## 🎲 What Happens Next?
 
-<details>
+{% tabs %}
+{% tab title="✅ Target Met" %}
+**Success!**
+- Creator can withdraw after the lock period
+- Your donation helps complete the CTO
+- You've supported the community! 🎉
+{% endtab %}
 
-<summary>If Target is Met ✅</summary>
+{% tab title="❌ Target Not Met" %}
+**Refund Available**
+- After deadline passes, raid moves to "Claim Refund"
+- You get **100% of your donation back** (no fees!)
+- Claim in the **🔄 Claim Refund** tab
+{% endtab %}
+{% endtabs %}
 
-* Creator can withdraw after lock period
-* Your donation helps complete the CTO
-
-</details>
-
-<details>
-
-<summary>If Target is Not Met ❌</summary>
-
-* After deadline passes, raid moves to "Claim Refund"
-* You get **100% of your donation back** (no fees)
-* Claim in the **🔄 Claim Refund** tab
-
-</details>
-
-## Understanding Risk
+## ⚠️ Understanding Risk
 
 {% hint style="warning" %}
-⚠️ Important: Once a raid target is met and the lock period expires, the creator can withdraw funds. Only donate to raids you trust.
+**Important**
+
+Once a raid target is met and the lock period expires, the creator can withdraw funds. Only donate to raids you trust!
 {% endhint %}
 
-<details>
+### 🔍 What to Check Before Donating
 
-<summary>What to check before donating</summary>
+| Check | Why It Matters |
+| ----- | -------------- |
+| 🏆 **Creator History** | Look for trust badges and past success |
+| ✅ **Verified Badge** | Lower fees = more serious creator |
+| 🐦 **Social Links** | Verify Twitter/community presence |
+| 📝 **Description** | Understand the raid goals |
+| 📍 **Contract Address** | Verify token legitimacy |
 
-* Creator's history (look for trust badges)
-* Verified badge (lower fees = more serious creator)
-* Social links (Twitter, community)
-* Raid description and goals
-* Contract address legitimacy
+## 📋 Donation Limits
 
-</details>
-
-## Donation Limits
-
-* **Minimum**: No minimum (but gas fees \~0.00001 SOL)
-* **Maximum**: No maximum
-
-## Transaction Fees
-
-Donations incur minimal Solana transaction fees (\~0.00001 SOL per tx).
+| Limit | Value |
+| ----- | ----- |
+| 📉 **Minimum** | No minimum (just gas ~0.00001 SOL) |
+| 📈 **Maximum** | No maximum |
+| ⛽ **Transaction Fee** | ~0.00001 SOL per tx |
