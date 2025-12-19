@@ -1,87 +1,131 @@
-# 🧊 BasedRaid Documentation
+# 🚀 Getting Started
 
-Welcome to the official BasedRaid documentation!
+Welcome to BasedRaid! This guide will get you set up in minutes.
 
 {% hint style="warning" %}
 **🚧 DEVNET PHASE**
 
-BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**.
-
-To get started, switch your wallet to Devnet and get free test SOL from the [Solana Faucet](https://faucet.solana.com/).
+BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**. You do NOT need to spend real money!
 {% endhint %}
 
-## 🎯 What is BasedRaid?
+## 📋 Prerequisites
 
-BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on Solana.
+### 💳 Step 1: Install a Solana Wallet
 
-| Feature | Description |
-| ------- | ----------- |
-| 💰 **Trustless Vaults** | Funds held in PDAs, not creator wallets |
-| 🎯 **Target-Based Release** | Funds only released when target is met |
-| 💸 **100% Refunds** | Full refund if target isn't met (no fees) |
-| ✅ **Verified Creators** | Lower fees and faster withdrawals |
-| 🔗 **Shareable Links** | Every raid has a unique URL |
-| 🏆 **Top Donors Leaderboard** | Recognition for top contributors |
+Choose one of these popular wallets:
 
-## ⚡ Key Features
+| Wallet | Link | Notes |
+| ------ | ---- | ----- |
+| 👻 **Phantom** | [phantom.app](https://phantom.app/) | Most popular, recommended |
+| ☀️ **Solflare** | [solflare.com](https://solflare.com/) | Great mobile support |
+| 🎒 **Backpack** | [backpack.app](https://backpack.app/) | Multi-chain support |
 
-| Feature | Description |
-| ------- | ----------- |
-| 🔒 **Trustless Vault** | Funds held in PDAs, not creator wallets |
-| 🔄 **Claimable Refunds** | 100% refund if target not met |
-| 💸 **Tiered Fees** | 3% for verified, 5% for standard |
-| ⏰ **Withdrawal Lock** | 30min for verified, 1hr for standard |
-| 🗳️ **Community Abort Vote** | 51% majority can abort during time-lock |
-| 🏆 **Creator Reputation** | Track record with trust badges |
-| 🔴 **Real-Time Sync** | Pump.fun-style instant updates |
-| ❓ **Mobile Help Icons** | Tap (?) to explain any technical term |
-| 📊 **Progress Animations** | Visual feedback at 25%, 50%, 75% |
-| 🔗 **Shareable Links** | Direct links to individual raids |
-| 🐦 **Social Sharing** | One-click share to X/Twitter |
-| 🏆 **Top Donors** | Leaderboard showing top 5 contributors |
-| ⚡ **Optimistic UI** | Instant feedback with blockchain confirmation |
+### 🔧 Step 2: Switch to Devnet
 
-## 🌐 Network Info
+{% hint style="info" %}
+Your wallet defaults to Mainnet. You must switch to **Devnet** to use BasedRaid.
+{% endhint %}
 
-| Property | Value |
-| -------- | ----- |
-| 🌐 **Network** | Solana Devnet |
-| 🔑 **Program ID** | `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE` |
+{% tabs %}
+{% tab title="Phantom" %}
+1. Click the ⚙️ gear icon (Settings)
+2. Scroll to **Developer Settings**
+3. Enable **Testnet Mode**
+4. Select **Devnet** as the network
+{% endtab %}
 
-## 💰 Fee Structure
+{% tab title="Solflare" %}
+1. Click **Settings** → **Network**
+2. Select **Devnet**
+{% endtab %}
+{% endtabs %}
 
-| Fee Type | Amount |
-| -------- | ------ |
-| 📦 **Creation Fee** | 0.02 SOL |
-| ✅ **Verified Badge** | 0.1 SOL |
-| 🔥 **Trending Boost** | 0.05 SOL |
-| 💸 **Withdrawal Fee** | 5% (3% verified) |
+### 💰 Step 3: Get Free Test SOL
 
-## 📚 Quick Links
+{% stepper %}
+{% step %}
+**Visit the Faucet**
 
-| Guide | Description |
-| ----- | ----------- |
-| 🚀 [Getting Started](getting-started.md) | Set up your wallet and get test SOL |
-| 🎯 [Creating Raids](creating-raids.md) | Launch your own fundraising campaign |
-| 💸 [Donating](donating.md) | Support community takeovers |
-| 💵 [Withdrawals](withdrawals.md) | Claim your raised funds |
-| 🔄 [Refunds](refunds.md) | Get refunds from failed raids |
-| 🗳️ [Community Abort Vote](community-abort-vote.md) | Vote to abort suspicious raids |
-| 🏆 [Creator Incentives](creator-incentives.md) | Unlock premium features |
-| 🔒 [Security](security.md) | Understand how funds are protected |
-| ⚙️ [Smart Contract](smart-contract.md) | Technical reference |
+Go to [faucet.solana.com](https://faucet.solana.com/)
+{% endstep %}
 
-## 🆕 Recent Updates
+{% step %}
+**Copy Your Address**
 
-### December 2025
+Copy your wallet address from Phantom/Solflare
+{% endstep %}
 
-| Update | Description |
-| ------ | ----------- |
-| 🔴 **Real-Time Sync** | Pump.fun-style instant updates via WebSocket |
-| ❓ **Mobile Help Icons** | Tap (?) to explain technical terms |
-| ✨ **Shareable Raid Links** | Every raid now has a unique URL |
-| 🐦 **Share to X/Twitter** | One-click social sharing |
-| 🏆 **Top Donors Leaderboard** | See top 5 contributors |
-| 📊 **Progress Milestones** | Visual animations at 25%, 50%, 75% |
-| ⚡ **Optimistic UI** | Instant visual feedback |
-| 🔒 **Rate Limiting** | Protection against double-clicks |
+{% step %}
+**Request Airdrop**
+
+Paste your address and click "Request Airdrop"
+{% endstep %}
+
+{% step %}
+**Receive SOL**
+
+You'll receive 1-2 SOL instantly! 🎉
+{% endstep %}
+{% endstepper %}
+
+{% hint style="success" %}
+**It's free!** Devnet SOL has no real value. Request more anytime you need it.
+{% endhint %}
+
+## 🔗 Connect to BasedRaid
+
+{% stepper %}
+{% step %}
+**Visit the App**
+
+Open BasedRaid in your browser
+{% endstep %}
+
+{% step %}
+**Connect Wallet**
+
+Click the **"Connect Wallet"** button in the top right
+{% endstep %}
+
+{% step %}
+**Select Provider**
+
+Choose Phantom, Solflare, or your preferred wallet
+{% endstep %}
+
+{% step %}
+**Approve Connection**
+
+Confirm the connection in your wallet popup
+{% endstep %}
+{% endstepper %}
+
+## 🎯 What's Next?
+
+| Goal | Guide | Description |
+| ---- | ----- | ----------- |
+| 💸 **Support a raid** | [Donating](donating.md) | Help fund community takeovers |
+| 🎨 **Create a raid** | [Creating Raids](creating-raids.md) | Launch your own fundraising campaign |
+| 💵 **Withdraw funds** | [Withdrawals](withdrawals.md) | Claim your raised funds |
+| 🔄 **Claim refund** | [Refunds](refunds.md) | Get your money back from failed raids |
+| 🔒 **Learn security** | [Security](security.md) | Understand how your funds are protected |
+
+## ⚠️ Important Notes
+
+{% hint style="warning" %}
+**Devnet Only**
+
+All SOL on BasedRaid is test currency with **no real value**. This is for testing purposes only.
+{% endhint %}
+
+{% hint style="info" %}
+**Non-Custodial**
+
+BasedRaid never controls your funds. Everything is held in on-chain vaults (PDAs) controlled by immutable smart contract logic.
+{% endhint %}
+
+{% hint style="info" %}
+**Do Your Research**
+
+Always verify raid creators before donating. Check their history, trust badges, and linked socials.
+{% endhint %}

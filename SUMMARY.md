@@ -1,0 +1,13 @@
+# Table of contents
+
+* [🚀 Getting Started](README.md)
+* [🧊 BasedRaid Documentation](<README (1).md>)
+* [🎯 Creating Raids](creating-raids.md)
+* [💸 Donating to Raids](donating.md)
+* [🗳️ Community Abort Vote](community-abort-vote.md)
+* [💵 Withdrawals](withdrawals.md)
+* [🔄 Refunds](refunds.md)
+* [🏆 Creator Incentives](creator-incentives.md)
+* [🔒 Security](security.md)
+* [⚙️ Smart Contract](smart-contract.md)
+* [SUMMARY](summary.md)
