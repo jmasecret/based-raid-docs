@@ -6,6 +6,8 @@ Welcome to BasedRaid! This guide will get you set up in minutes.
 **🚧 DEVNET PHASE**
 
 BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**. You do NOT need to spend real money!
+
+🔗 **Launch App:** [devnet.based-bot.fun](https://devnet.based-bot.fun/)
 {% endhint %}
 
 ## 📋 Prerequisites
@@ -78,7 +80,7 @@ You'll receive 1-2 SOL instantly! 🎉
 {% step %}
 **Visit the App**
 
-Open BasedRaid in your browser
+Go to [devnet.based-bot.fun](https://devnet.based-bot.fun/)
 {% endstep %}
 
 {% step %}
