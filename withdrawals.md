@@ -62,20 +62,32 @@ Funds are transferred to your wallet immediately!
 {% endstep %}
 {% endstepper %}
 
-## 💸 Platform Fees
+## 💸 Tier-Based Platform Fees
 
-A platform fee is deducted from withdrawals:
+Platform fees are determined by your **$BASEDBOT holder tier**, verified on-chain:
 
-| Raid Type | Fee | Example (10 SOL raised) |
-| --------- | --- | ----------------------- |
-| ✅ **Verified** | 3% | You receive **9.7 SOL** |
-| 📋 **Standard** | 5% | You receive **9.5 SOL** |
+| Tier | $BASEDBOT Required | Platform Fee | Example (10 SOL) |
+| ---- | ------------------ | ------------ | ---------------- |
+| 🐋 **Whale** | 10,000,000+ | **1%** | You receive **9.9 SOL** |
+| 🦍 **Based Ape** | 1,000,000+ | **2%** | You receive **9.8 SOL** |
+| 💎 **Diamond Hands** | 500,000+ | 3% | You receive **9.7 SOL** |
+| 🌱 **Seedling** | 100,000+ | 4% | You receive **9.6 SOL** |
+| 🎰 **Degen** | < 100,000 | 5% | You receive **9.5 SOL** |
 
 {% hint style="success" %}
-**Get Verified = Save Money!**
+**On-Chain Verification**
 
-Verified raids pay only 3% vs 5% standard. On a 100 SOL raise, that's 2 SOL saved!
+Your tier is verified automatically by reading your $BASEDBOT token balance during withdrawal. No trust assumptions!
 {% endhint %}
+
+## 💰 Revenue Share
+
+Top-tier holders also earn **revenue share** from the platform:
+
+| Tier | Revenue Share |
+| ---- | ------------- |
+| 🐋 **Whale** | **15%** of platform fees |
+| 🦍 **Based Ape** | **5%** of platform fees |
 
 ## 📊 After Withdrawal
 

@@ -57,18 +57,28 @@ Your raid is now live in the Active tab!
 
 ## ⚡ Optional Boosts
 
-| Boost | Cost | Benefits |
-| ----- | ---- | -------- |
-| ✅ **Verified Badge** | 0.1 SOL | 3% fee (vs 5%) • 30min unlock (vs 1hr) |
-| 🔥 **Trending Boost** | 0.05 SOL | Featured in Trending section |
+| Boost | Description |
+| ----- | ----------- |
+| ✅ **Verified Badge** | 30min unlock (vs 1hr) + trust signal |
+| 🔥 **Trending Boost** | Featured in Trending section |
 
-## 💰 Creation Fees
+## 💰 Tier-Based Creation Fees
 
-| Fee Type | Amount |
-| -------- | ------ |
-| 📦 Base Creation Fee | 0.02 SOL |
-| ➕ Selected Boosts | Variable |
-| 🔒 Rent Deposit | ~0.006 SOL (refundable) |
+Your creation fees are determined by your **$BASEDBOT holder tier**, verified on-chain:
+
+| Tier | $BASEDBOT Required | Creation | Verified | Boost |
+| ---- | ------------------ | -------- | -------- | ----- |
+| 🐋 **Whale** | 10,000,000+ | **FREE** | **FREE** | **FREE** |
+| 🦍 **Based Ape** | 1,000,000+ | **FREE** | **FREE** | **FREE** |
+| 💎 **Diamond Hands** | 500,000+ | ◎0.01 | ◎0.05 | ◎0.03 |
+| 🌱 **Seedling** | 100,000+ | ◎0.015 | ◎0.08 | ◎0.04 |
+| 🎰 **Degen** | < 100,000 | ◎0.02 | ◎0.1 | ◎0.05 |
+
+{% hint style="info" %}
+**Additional Costs**
+
+🔒 Rent Deposit: ~0.006 SOL (refundable on raid cancellation if no donations)
+{% endhint %}
 
 {% hint style="success" %}
 **After Creation**
