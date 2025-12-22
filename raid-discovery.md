@@ -66,3 +66,4 @@ All other active campaigns that don't qualify for Trending or aren't Sponsored.
 | Active Raids | All others | 3rd |
 
 This system rewards both paying creators (Sponsored) and organically successful campaigns (Trending), while ensuring all raids remain discoverable.
+
