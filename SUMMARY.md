@@ -1,9 +1,10 @@
 # Table of contents
 
 * [🚀 Getting Started](README.md)
-* [🧊 BasedRaid Documentation](<README (1).md>)
+* [🧊 BasedRaid Documentation](basedraid-documentation.md)
 * [🎯 Creating Raids](creating-raids.md)
 * [💸 Donating to Raids](donating.md)
+* [🔥 Raid Discovery](raid-discovery.md)
 * [🗳️ Community Abort Vote](community-abort-vote.md)
 * [💵 Withdrawals](withdrawals.md)
 * [🔄 Refunds](refunds.md)
