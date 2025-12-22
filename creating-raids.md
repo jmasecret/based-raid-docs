@@ -26,7 +26,7 @@ Complete the raid creation form with your project details
 {% step %}
 **⚡ Select Boosts (Optional)**
 
-Add Verified Badge or Trending Boost for extra visibility
+Add Verified Badge or Sponsored Boost for extra visibility
 {% endstep %}
 
 {% step %}
@@ -60,7 +60,7 @@ Your raid is now live in the Active tab!
 | Boost | Description |
 | ----- | ----------- |
 | ✅ **Verified Badge** | 30min unlock (vs 1hr) + trust signal |
-| 🔥 **Trending Boost** | Featured in Trending section |
+| ⭐ **Sponsored Boost** | Featured in Sponsored section |
 
 ## 💰 Tier-Based Creation Fees
 

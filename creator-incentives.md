@@ -43,14 +43,14 @@ Get verified to unlock premium features:
 | ✅ **Badge Display** | ❌ | ✅ |
 | 🏆 **Trust Signal** | Basic | **Enhanced** |
 
-## 🔥 Trending Boost
+## ⭐ Sponsored Boost
 
 Get featured for maximum visibility:
 
-| Benefit | Standard | Trending |
+| Benefit | Standard | Sponsored |
 | ------- | -------- | -------- |
 | 📍 **Grid Position** | Normal | **Top** |
-| 🎨 **Border Style** | Gray | **Purple Glow** |
+| 🎨 **Border Style** | Gray | **Gold Glow** |
 | 👀 **Visibility** | Normal | **Enhanced** |
 
 ## 📊 Creator Reputation System

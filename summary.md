@@ -1,3 +1,14 @@
-# SUMMARY
+# Table of contents
 
-<table data-view="cards"><thead><tr><th>Title</th><th data-card-target data-type="content-ref">Target</th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Introduction</td><td><a href="README (1).md">README (1).md</a></td><td><a href=".gitbook/assets/2_Introduction.png">2_Introduction.png</a></td></tr><tr><td>Wallet Setup</td><td><a href="./">.</a></td><td><a href=".gitbook/assets/1_Getting started.png">1_Getting started.png</a></td></tr><tr><td>Creating Raids</td><td><a href="creating-raids.md">creating-raids.md</a></td><td><a href=".gitbook/assets/3_Creating Raids.png">3_Creating Raids.png</a></td></tr><tr><td>Donating to Raids</td><td><a href="donating.md">donating.md</a></td><td><a href=".gitbook/assets/4_Donating.png">4_Donating.png</a></td></tr><tr><td>Abort Raid</td><td><a href="community-abort-vote.md">community-abort-vote.md</a></td><td><a href=".gitbook/assets/abort_raid.jpg">abort_raid.jpg</a></td></tr><tr><td>Withdrawals</td><td><a href="withdrawals.md">withdrawals.md</a></td><td><a href=".gitbook/assets/5_Withdrawals.png">5_Withdrawals.png</a></td></tr><tr><td>Refunds</td><td><a href="refunds.md">refunds.md</a></td><td><a href=".gitbook/assets/6_Refunds.png">6_Refunds.png</a></td></tr><tr><td>Creator Incentives</td><td><a href="creator-incentives.md">creator-incentives.md</a></td><td><a href=".gitbook/assets/7_Incentives.png">7_Incentives.png</a></td></tr><tr><td>Security Features</td><td><a href="security.md">security.md</a></td><td><a href=".gitbook/assets/8_Security.png">8_Security.png</a></td></tr><tr><td>Smart Contract Reference</td><td><a href="smart-contract.md">smart-contract.md</a></td><td><a href=".gitbook/assets/9_Smart Contract.png">9_Smart Contract.png</a></td></tr></tbody></table>
+* [🚀 Getting Started](README.md)
+* [🧊 BasedRaid Documentation](<README (1).md>)
+* [🎯 Creating Raids](creating-raids.md)
+* [💸 Donating to Raids](donating.md)
+* [📊 Raid Discovery](raid-discovery.md)
+* [🗳️ Community Abort Vote](community-abort-vote.md)
+* [💵 Withdrawals](withdrawals.md)
+* [🔄 Refunds](refunds.md)
+* [🏆 Creator Incentives](creator-incentives.md)
+* [🔒 Security](security.md)
+* [⚙️ Smart Contract](smart-contract.md)
+* [SUMMARY](summary.md)

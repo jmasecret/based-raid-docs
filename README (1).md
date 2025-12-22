@@ -54,7 +54,7 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 | --------------------- | ---------------- |
 | 📦 **Creation Fee**   | 0.02 SOL         |
 | ✅ **Verified Badge**  | 0.1 SOL          |
-| 🔥 **Trending Boost** | 0.05 SOL         |
+| ⭐ **Sponsored Boost** | 0.05 SOL         |
 | 💸 **Withdrawal Fee** | 5% (3% verified) |
 
 ## 📚 Quick Links

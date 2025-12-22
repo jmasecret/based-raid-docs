@@ -22,7 +22,7 @@ Technical reference for the BasedRaid smart contract on Solana.
 | ✅ `WITHDRAWAL_DELAY_VERIFIED` | 30 min | Lock period for verified raids |
 | 💰 `BASE_FEE` | 0.02 SOL | Creation fee |
 | ✅ `VERIFIED_FEE` | 0.1 SOL | Verified badge cost |
-| 🔥 `PROMOTED_FEE` | 0.05 SOL | Trending boost cost |
+| ⭐ `PROMOTED_FEE` | 0.05 SOL | Sponsored boost cost |
 
 ## 🏗️ Account Structures
 
@@ -150,7 +150,7 @@ Votes to abort a raid during the time-lock period.
 | ---- | ---- |
 | 📦 **Base Creation** | 0.02 SOL |
 | ✅ **+ Verified** | +0.1 SOL |
-| 🔥 **+ Trending** | +0.05 SOL |
+| ⭐ **+ Sponsored** | +0.05 SOL |
 
 ### Withdrawal Fees
 
