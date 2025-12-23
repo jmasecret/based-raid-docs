@@ -9,6 +9,7 @@
 * [💵 Withdrawals](withdrawals.md)
 * [🔄 Refunds](refunds.md)
 * [🏆 Creator Incentives](creator-incentives.md)
+* [🪬 Consult Oracle](consult-oracle.md)
 * [🔒 Security](security.md)
 * [⚙️ Smart Contract](smart-contract.md)
 * [SUMMARY](summary.md)
