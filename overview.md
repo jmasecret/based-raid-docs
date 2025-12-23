@@ -27,7 +27,8 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 
 | Feature                      | Description                                   |
 | ---------------------------- | --------------------------------------------- |
-| 🔒 **Trustless Vault**       | Funds held in PDAs, not creator wallets       |
+| � **Consult Oracle**        | AI-powered token analysis for holders         |
+| �🔒 **Trustless Vault**       | Funds held in PDAs, not creator wallets       |
 | 🔄 **Claimable Refunds**     | 100% refund if target not met                 |
 | 💸 **Tiered Fees**           | 3% for verified, 5% for standard              |
 | ⏰ **Withdrawal Lock**        | 30min for verified, 1hr for standard          |
@@ -62,6 +63,7 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 | Guide                                               | Description                          |
 | --------------------------------------------------- | ------------------------------------ |
 | 🚀 [Getting Started](./)                            | Set up your wallet and get test SOL  |
+| 🔮 [Consult Oracle](consult-oracle.md)              | AI-powered token analysis            |
 | 🎯 [Creating Raids](creating-raids.md)              | Launch your own fundraising campaign |
 | 💸 [Donating](donating.md)                          | Support community takeovers          |
 | 💵 [Withdrawals](withdrawals.md)                    | Claim your raised funds              |
@@ -77,6 +79,7 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 
 | Update                        | Description                                  |
 | ----------------------------- | -------------------------------------------- |
+| 🔮 **Consult Oracle**         | AI-powered token analysis (PRO for Ape/Whale)|
 | 🔴 **Real-Time Sync**         | Pump.fun-style instant updates via WebSocket |
 | ❓ **Mobile Help Icons**       | Tap (?) to explain technical terms           |
 | ✨ **Shareable Raid Links**    | Every raid now has a unique URL              |
