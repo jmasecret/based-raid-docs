@@ -75,7 +75,7 @@ The Oracle analyzes:
 
 - **Top 20 Holders** - Fetched directly from Solana RPC
 - **LP Detection** - Identifies Raydium, Orca, Meteora, Pump.fun pools
-- **Developer Wallet** - Found via Metaplex Metadata Authority
+- **Developer Wallet** - Found via Genesis Walk (first transaction signer)
 - **Bundle Analysis** - Traces funding sources of top holders
 - **Whale Sentiment** - Analyzes recent transaction patterns
 
