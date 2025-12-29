@@ -7,7 +7,7 @@ Technical reference for the BasedRaid smart contract on Solana.
 | Property | Value |
 | -------- | ----- |
 | 🌐 **Network** | Solana Devnet |
-| 🔑 **Program ID** | `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE` |
+| 🔑 **Program ID** | `25dddnPNo5qYi21TehUKR6eF24ZdvVJHy7nmFzEf3Tjg` |
 | 🛠️ **Framework** | Anchor |
 | 🦀 **Language** | Rust |
 

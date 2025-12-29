@@ -47,7 +47,7 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 | Property          | Value                                          |
 | ----------------- | ---------------------------------------------- |
 | 🌐 **Network**    | Solana Devnet                                  |
-| 🔑 **Program ID** | `DTS66x95eduAtc1pYYemwbE4Ry6riwSBsMTRCmtDPXkE` |
+| 🔑 **Program ID** | `25dddnPNo5qYi21TehUKR6eF24ZdvVJHy7nmFzEf3Tjg` |
 
 ## 💰 Fee Structure
 
