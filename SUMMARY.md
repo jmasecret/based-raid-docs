@@ -4,6 +4,7 @@
 * [🧊 BasedRaid Documentation](basedraid-documentation.md)
 * [🎯 Creating Raids](creating-raids.md)
 * [💸 Donating to Raids](donating.md)
+* [💯 Donor Rewards](donor-rewards.md)
 * [🔥 Raid Discovery](raid-discovery.md)
 * [🗳️ Community Abort Vote](community-abort-vote.md)
 * [💵 Withdrawals](withdrawals.md)
