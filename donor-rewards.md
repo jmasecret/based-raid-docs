@@ -21,15 +21,29 @@ When a raid is successfully withdrawn, the platform fee is split:
 | 🏛️ **Treasury** | **80%** | Platform operations & token buybacks |
 | 🎁 **Donor Pool** | **20%** | Distributed to active donors |
 
-### 💡 Example
+### 💡 Tier-Based Examples (10 SOL Raid)
 
-For a **10 SOL** raid with a **5% platform fee** (0.5 SOL):
+The platform fee depends on the creator's **$BASEDBOT holder tier**, verified on-chain:
 
-| Recipient | Amount |
-| --------- | ------ |
-| 💰 **Creator** | **9.5 SOL** |
-| 🏛️ **Treasury** | **0.4 SOL** (80% of fee) |
-| 🎁 **Donor Pool** | **0.1 SOL** (20% of fee) |
+| Tier | Platform Fee | Fee Amount | Treasury (80%) | Donor Pool (20%) | Creator Receives |
+| ---- | ------------ | ---------- | -------------- | ---------------- | ---------------- |
+| � **Whale** | 1% | 0.10 SOL | 0.08 SOL | **0.02 SOL** | 9.90 SOL |
+| 🦍 **Based Ape** | 2% | 0.20 SOL | 0.16 SOL | **0.04 SOL** | 9.80 SOL |
+| 💎 **Diamond Hands** | 3% | 0.30 SOL | 0.24 SOL | **0.06 SOL** | 9.70 SOL |
+| 🌱 **Seedling** | 4% | 0.40 SOL | 0.32 SOL | **0.08 SOL** | 9.60 SOL |
+| � **Degen** | 5% | 0.50 SOL | 0.40 SOL | **0.10 SOL** | 9.50 SOL |
+
+{% hint style="info" %}
+**Tier Requirements**
+
+| Tier | $BASEDBOT Required |
+| ---- | ------------------ |
+| 🐋 Whale | 10,000,000+ |
+| 🦍 Based Ape | 1,000,000+ |
+| 💎 Diamond Hands | 500,000+ |
+| 🌱 Seedling | 100,000+ |
+| 🎰 Degen | < 100,000 |
+{% endhint %}
 
 ## 🔍 Tracking the Pool
 
