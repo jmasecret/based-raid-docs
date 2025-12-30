@@ -89,6 +89,32 @@ Top-tier holders also earn **revenue share** from the platform:
 | 🐋 **Whale** | **15%** of platform fees |
 | 🦍 **Based Ape** | **5%** of platform fees |
 
+## 🎁 Donor Rewards Pool
+
+**20% of every successful raid's platform fee** is automatically sent to the **Donor Rewards Pool**.
+
+| Flow | Description |
+| ---- | ----------- |
+| 💰 **Source** | 20% of the platform fee on every successful withdrawal |
+| 🏦 **Destination** | Dedicated Donor Pool wallet |
+| 🎯 **Purpose** | Rewards distributed to active donors |
+
+{% hint style="success" %}
+**Incentive Alignment**
+
+Donors don't just give—they also earn! The more raids succeed, the larger the pool grows. This creates a virtuous cycle where everyone benefits from successful CTO recoveries.
+{% endhint %}
+
+### Fee Split Example
+
+For a **10 SOL** raid with a **5% platform fee** (0.5 SOL):
+
+| Recipient | Percentage | Amount |
+| --------- | ---------- | ------ |
+| 💰 **Creator** | 95% | **9.5 SOL** |
+| 🏛️ **Treasury** | 4% (80% of 5%) | **0.4 SOL** |
+| 🎁 **Donor Pool** | 1% (20% of 5%) | **0.1 SOL** |
+
 ## 📊 After Withdrawal
 
 | What Happens | Details |

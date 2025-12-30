@@ -86,6 +86,7 @@ Your donation is:
 - Creator can withdraw after the lock period
 - Your donation helps complete the CTO
 - You've supported the community! 🎉
+- **🎁 Bonus:** 20% of the platform fee goes to the Donor Rewards Pool!
 {% endtab %}
 
 {% tab title="❌ Target Not Met" %}
