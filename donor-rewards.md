@@ -1,4 +1,4 @@
-# 🎁 Donor Rewards Pool
+# 💯 Donor Rewards
 
 Earn rewards for supporting successful raids!
 
@@ -16,55 +16,66 @@ Donors don't just give—they also earn! The more raids you support, the more yo
 
 When a raid is successfully withdrawn, the platform fee is split:
 
-| Recipient | Percentage | Description |
-| --------- | ---------- | ----------- |
-| 🏛️ **Treasury** | **80%** | Platform operations & token buybacks |
-| 🎁 **Donor Pool** | **20%** | Distributed to active donors |
+| Recipient         | Percentage | Description                          |
+| ----------------- | ---------- | ------------------------------------ |
+| 🏛️ **Treasury**  | **80%**    | Platform operations & token buybacks |
+| 🎁 **Donor Pool** | **20%**    | Distributed to active donors         |
 
 ### 💡 Example
 
 For a **10 SOL** raid with a **5% platform fee** (0.5 SOL):
 
-| Recipient | Amount |
-| --------- | ------ |
-| 💰 **Creator** | **9.5 SOL** |
-| 🏛️ **Treasury** | **0.4 SOL** (80% of fee) |
+| Recipient         | Amount                   |
+| ----------------- | ------------------------ |
+| 💰 **Creator**    | **9.5 SOL**              |
+| 🏛️ **Treasury**  | **0.4 SOL** (80% of fee) |
 | 🎁 **Donor Pool** | **0.1 SOL** (20% of fee) |
 
 ## 🔍 Tracking the Pool
 
 You can see the current **Donor Rewards Pool** balance on the main dApp page:
 
-- Look for the green **"Donor Rewards Pool: X.XX SOL"** badge
-- Balance updates in real-time as successful raids are withdrawn
+* Look for the green **"Donor Rewards Pool: X.XX SOL"** badge
+* Balance updates in real-time as successful raids are withdrawn
 
 ## ❓ FAQ
 
-{% tabs %}
-{% tab title="When do I earn?" %}
+<details>
+
+<summary>When do I earn?</summary>
+
 Rewards accumulate in the pool with every successful raid withdrawal. Distribution details will be announced before mainnet launch.
-{% endtab %}
 
-{% tab title="How much can I earn?" %}
+</details>
+
+<details>
+
+<summary>How much can I earn?</summary>
+
 Your share depends on:
-- Total donations across all successful raids
-- Your proportional contribution to the ecosystem
-- Number of raids that reach their target
-{% endtab %}
 
-{% tab title="Is this on-chain?" %}
+* Total donations across all successful raids
+* Your proportional contribution to the ecosystem
+* Number of raids that reach their target
+
+</details>
+
+<details>
+
+<summary>Is this on-chain?</summary>
+
 Yes! The Donor Pool wallet is a dedicated on-chain address. All fee splits are enforced by the smart contract—no trust required.
-{% endtab %}
-{% endtabs %}
+
+</details>
 
 ## 🚀 Why This Matters
 
-| Benefit | Description |
-| ------- | ----------- |
-| 🔄 **Sustainable Loop** | Donors are incentivized to fund more raids |
-| 📈 **Aligned Interests** | Everyone benefits when raids succeed |
-| 🔒 **Trustless** | Enforced by smart contract, not promises |
-| 🎯 **Fair Distribution** | Active participants earn more |
+| Benefit                  | Description                                |
+| ------------------------ | ------------------------------------------ |
+| 🔄 **Sustainable Loop**  | Donors are incentivized to fund more raids |
+| 📈 **Aligned Interests** | Everyone benefits when raids succeed       |
+| 🔒 **Trustless**         | Enforced by smart contract, not promises   |
+| 🎯 **Fair Distribution** | Active participants earn more              |
 
 {% hint style="info" %}
 **Coming Soon**
