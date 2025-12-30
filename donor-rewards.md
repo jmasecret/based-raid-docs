@@ -18,7 +18,7 @@ When a raid is successfully withdrawn, the platform fee is split:
 
 | Recipient         | Percentage | Description                          |
 | ----------------- | ---------- | ------------------------------------ |
-| 🏛️ **Treasury**  | **80%**    | Platform operations & token buybacks |
+| 🏛️ **Treasury**  | **80%**    | Allocated to Community (80%) & Team (20%) |
 | 🎁 **Donor Pool** | **20%**    | Distributed to active donors         |
 
 ### 💡 Tier-Based Examples (10 SOL Raid)
