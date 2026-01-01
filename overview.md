@@ -2,12 +2,12 @@
 
 Welcome to the official BasedRaid documentation!
 
-{% hint style="warning" %}
-**🚧 DEVNET PHASE**
+{% hint style="success" %}
+**🎉 LIVE ON MAINNET**
 
-BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**.
+BasedRaid is now live on **Solana Mainnet**! Real SOL, real raids, real community takeovers.
 
-To get started, switch your wallet to Devnet and get free test SOL from the [Solana Faucet](https://faucet.solana.com/).
+🔗 **Launch App:** [raid.based-bot.fun](https://raid.based-bot.fun/)
 {% endhint %}
 
 ## 🎯 What is BasedRaid?
@@ -27,14 +27,14 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 
 | Feature                      | Description                                   |
 | ---------------------------- | --------------------------------------------- |
-| � **Consult Oracle**        | AI-powered token analysis for holders         |
-| �🔒 **Trustless Vault**       | Funds held in PDAs, not creator wallets       |
+| 🔮 **Consult Oracle**        | AI-powered token analysis for holders         |
+| 🔒 **Trustless Vault**       | Funds held in PDAs, not creator wallets       |
 | 🔄 **Claimable Refunds**     | 100% refund if target not met                 |
 | 💸 **Tiered Fees**           | 3% for verified, 5% for standard              |
 | ⏰ **Withdrawal Lock**        | 30min for verified, 1hr for standard          |
 | 🗳️ **Community Abort Vote** | 51% majority can abort during time-lock       |
 | 🏆 **Creator Reputation**    | Track record with trust badges                |
-| 🔴 **Real-Time Sync**        | Pump.fun-style instant updates                |
+| 🔴 **Real-Time Sync**        | Instant updates via WebSocket subscription    |
 | ❓ **Mobile Help Icons**      | Tap (?) to explain any technical term         |
 | 📊 **Progress Animations**   | Visual feedback at 25%, 50%, 75%              |
 | 🔗 **Shareable Links**       | Direct links to individual raids              |
@@ -46,23 +46,38 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 
 | Property          | Value                                          |
 | ----------------- | ---------------------------------------------- |
-| 🌐 **Network**    | Solana Devnet                                  |
-| 🔑 **Program ID** | `25dddnPNo5qYi21TehUKR6eF24ZdvVJHy7nmFzEf3Tjg` |
+| 🌐 **Network**    | Solana Mainnet                                 |
+| 🔗 **App URL**    | [raid.based-bot.fun](https://raid.based-bot.fun/) |
+| 🧪 **Devnet**     | [devnet.based-bot.fun](https://devnet.based-bot.fun/) |
 
 ## 💰 Fee Structure
 
-| Fee Type              | Amount           |
-| --------------------- | ---------------- |
-| 📦 **Creation Fee**   | 0.02 SOL         |
-| ✅ **Verified Badge**  | 0.1 SOL          |
-| ⭐ **Sponsored Boost** | 0.05 SOL         |
-| 💸 **Withdrawal Fee** | 5% (3% verified) |
+All fees are based on your **$BASEDBOT holder tier**:
+
+| Tier | $BASEDBOT | Creation | Verified | Boost | Withdrawal |
+| ---- | --------- | -------- | -------- | ----- | ---------- |
+| � **Whale** | 10M+ | **FREE** | **FREE** | **FREE** | **1%** |
+| 🦍 **Based Ape** | 1M+ | **FREE** | **FREE** | **FREE** | **2%** |
+| 💎 **Diamond Hands** | 500K+ | ◎0.01 | ◎0.05 | ◎0.03 | **3%** |
+| 🌱 **Seedling** | 100K+ | ◎0.015 | ◎0.08 | ◎0.04 | **4%** |
+| 🎰 **Degen** | <100K | ◎0.02 | ◎0.1 | ◎0.05 | **5%** |
+
+## 🪙 $BASEDBOT Token
+
+Hold $BASEDBOT to unlock premium features and reduced fees!
+
+| Tier | Requirement | Benefits |
+| ---- | ----------- | -------- |
+| 🦍 **Based Ape** | 1M+ tokens | Pro Oracle, reduced fees |
+| 🐋 **Whale** | 10M+ tokens | All perks + priority support |
+
+**Token:** `3ZJ7C2jJhavcobYztTVqLLuX23hxrG1AMkTPG7GBpump`
 
 ## 📚 Quick Links
 
 | Guide                                               | Description                          |
 | --------------------------------------------------- | ------------------------------------ |
-| 🚀 [Getting Started](./)                            | Set up your wallet and get test SOL  |
+| 🚀 [Getting Started](./)                            | Set up your wallet and connect       |
 | 🔮 [Consult Oracle](consult-oracle.md)              | AI-powered token analysis            |
 | 🎯 [Creating Raids](creating-raids.md)              | Launch your own fundraising campaign |
 | 💸 [Donating](donating.md)                          | Support community takeovers          |
@@ -74,6 +89,14 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 | ⚙️ [Smart Contract](smart-contract.md)              | Technical reference                  |
 
 ## 🆕 Recent Updates
+
+### January 2026
+
+| Update                        | Description                                  |
+| ----------------------------- | -------------------------------------------- |
+| 🚀 **Mainnet Launch**         | BasedRaid is now live on Solana Mainnet!     |
+| ⚡ **Helius Integration**      | Premium RPC for faster, reliable connections |
+| 💰 **$BASEDBOT Tiers**        | Hold tokens for reduced fees & Pro features  |
 
 ### December 2025
 

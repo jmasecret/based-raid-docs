@@ -6,9 +6,9 @@ Technical reference for the BasedRaid smart contract on Solana.
 
 | Property | Value |
 | -------- | ----- |
-| 🌐 **Network** | Solana Devnet |
-| 🔑 **Program ID** | `25dddnPNo5qYi21TehUKR6eF24ZdvVJHy7nmFzEf3Tjg` |
-| 🛠️ **Framework** | Anchor |
+| 🌐 **Network** | Solana Mainnet |
+| � **Program ID** | `25dddnPNo5qYi21TehUKR6eF24ZdvVJHy7nmFzEf3Tjg` |
+| �🛠️ **Framework** | Anchor |
 | 🦀 **Language** | Rust |
 
 ## 📊 Constants
@@ -144,20 +144,15 @@ Votes to abort a raid during the time-lock period.
 
 ## 💰 Fee Structure
 
-### Creation Fees
+All fees are determined by the creator's **$BASEDBOT holder tier**:
 
-| Type | Cost |
-| ---- | ---- |
-| 📦 **Base Creation** | 0.02 SOL |
-| ✅ **+ Verified** | +0.1 SOL |
-| ⭐ **+ Sponsored** | +0.05 SOL |
-
-### Withdrawal Fees
-
-| Type | Fee |
-| ---- | --- |
-| 📋 **Standard** | 5% |
-| ✅ **Verified** | 3% |
+| Tier | $BASEDBOT | Creation | Verified | Boost | Withdrawal |
+| ---- | --------- | -------- | -------- | ----- | ---------- |
+| 🐋 **Whale** | 10M+ | **FREE** | **FREE** | **FREE** | **1%** |
+| 🦍 **Based Ape** | 1M+ | **FREE** | **FREE** | **FREE** | **2%** |
+| 💎 **Diamond Hands** | 500K+ | 0.01 SOL | 0.05 SOL | 0.03 SOL | **3%** |
+| 🌱 **Seedling** | 100K+ | 0.015 SOL | 0.08 SOL | 0.04 SOL | **4%** |
+| 🎰 **Degen** | <100K | 0.02 SOL | 0.1 SOL | 0.05 SOL | **5%** |
 
 ### Refund Fees
 

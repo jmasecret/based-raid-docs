@@ -113,8 +113,8 @@ The Oracle analyzes:
 
 | Property            | Value                         |
 | ------------------- | ----------------------------- |
-| 🌐 **Network**      | Solana Mainnet (for analysis) |
-| 🎮 **dApp Network** | Solana Devnet                 |
+| 🌐 **Analytics**    | Solana Mainnet                |
+| 🎮 **dApp**         | Solana Mainnet                |
 
 {% hint style="warning" %}
 **Disclaimer**

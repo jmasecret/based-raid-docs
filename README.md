@@ -2,12 +2,12 @@
 
 Welcome to BasedRaid! This guide will get you set up in minutes.
 
-{% hint style="warning" %}
-**🚧 DEVNET PHASE**
+{% hint style="success" %}
+**🎉 LIVE ON MAINNET**
 
-BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**. You do NOT need to spend real money!
+BasedRaid is now live on **Solana Mainnet**! Real SOL, real raids, real community takeovers.
 
-🔗 **Launch App:** [devnet.based-bot.fun](https://devnet.based-bot.fun/)
+🔗 **Launch App:** [raid.based-bot.fun](https://raid.based-bot.fun/)
 {% endhint %}
 
 ## 📋 Prerequisites
@@ -22,57 +22,15 @@ Choose one of these popular wallets:
 | ☀️ **Solflare** | [solflare.com](https://solflare.com/) | Great mobile support |
 | 🎒 **Backpack** | [backpack.app](https://backpack.app/) | Multi-chain support |
 
-### 🔧 Step 2: Switch to Devnet
+### 💰 Step 2: Get SOL
 
-{% hint style="info" %}
-Your wallet defaults to Mainnet. You must switch to **Devnet** to use BasedRaid.
-{% endhint %}
+You'll need SOL to create raids or donate:
 
-{% tabs %}
-{% tab title="Phantom" %}
-1. Click the ⚙️ gear icon (Settings)
-2. Scroll to **Developer Settings**
-3. Enable **Testnet Mode**
-4. Select **Devnet** as the network
-{% endtab %}
-
-{% tab title="Solflare" %}
-1. Click **Settings** → **Network**
-2. Select **Devnet**
-{% endtab %}
-{% endtabs %}
-
-### 💰 Step 3: Get Free Test SOL
-
-{% stepper %}
-{% step %}
-**Visit the Faucet**
-
-Go to [faucet.solana.com](https://faucet.solana.com/)
-{% endstep %}
-
-{% step %}
-**Copy Your Address**
-
-Copy your wallet address from Phantom/Solflare
-{% endstep %}
-
-{% step %}
-**Request Airdrop**
-
-Paste your address and click "Request Airdrop"
-{% endstep %}
-
-{% step %}
-**Receive SOL**
-
-You'll receive 1-2 SOL instantly! 🎉
-{% endstep %}
-{% endstepper %}
-
-{% hint style="success" %}
-**It's free!** Devnet SOL has no real value. Request more anytime you need it.
-{% endhint %}
+| Method | Description |
+| ------ | ----------- |
+| 💱 **Exchange** | Buy SOL on Coinbase, Binance, Kraken, etc. |
+| 🔄 **Bridge** | Bridge from other chains via Wormhole or deBridge |
+| 👥 **P2P** | Receive from a friend or community member |
 
 ## 🔗 Connect to BasedRaid
 
@@ -80,7 +38,7 @@ You'll receive 1-2 SOL instantly! 🎉
 {% step %}
 **Visit the App**
 
-Go to [devnet.based-bot.fun](https://devnet.based-bot.fun/)
+Go to [raid.based-bot.fun](https://raid.based-bot.fun/)
 {% endstep %}
 
 {% step %}
@@ -112,12 +70,24 @@ Confirm the connection in your wallet popup
 | 🔄 **Claim refund** | [Refunds](refunds.md) | Get your money back from failed raids |
 | 🔒 **Learn security** | [Security](security.md) | Understand how your funds are protected |
 
+## 🧪 Want to Test First?
+
+{% hint style="info" %}
+**Devnet Available**
+
+Want to test without real SOL? Use our devnet version:
+
+🔗 **Devnet App:** [devnet.based-bot.fun](https://devnet.based-bot.fun/)
+
+Switch your wallet to **Devnet** and get free test SOL from [faucet.solana.com](https://faucet.solana.com/)
+{% endhint %}
+
 ## ⚠️ Important Notes
 
 {% hint style="warning" %}
-**Devnet Only**
+**Real SOL**
 
-All SOL on BasedRaid is test currency with **no real value**. This is for testing purposes only.
+BasedRaid mainnet uses real SOL. Always double-check amounts before confirming transactions.
 {% endhint %}
 
 {% hint style="info" %}

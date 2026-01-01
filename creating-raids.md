@@ -14,7 +14,7 @@ A raid is a fundraising campaign for a Community Takeover (CTO). Set a target am
 {% step %}
 **🔗 Connect Your Wallet**
 
-Go to [devnet.based-bot.fun](https://devnet.based-bot.fun/), click "Connect Wallet" and connect your Solana wallet (make sure you're on Devnet!)
+Go to [raid.based-bot.fun](https://raid.based-bot.fun/), click "Connect Wallet" and connect your Solana wallet
 {% endstep %}
 
 {% step %}

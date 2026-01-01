@@ -2,12 +2,12 @@
 
 Welcome to the official BasedRaid documentation!
 
-{% hint style="warning" %}
-**🚧 DEVNET PHASE**
+{% hint style="success" %}
+**🎉 LIVE ON MAINNET**
 
-BasedRaid is currently live on **Solana Devnet only**. All SOL used is **test SOL with no real value**.
+BasedRaid is now live on **Solana Mainnet**! Real SOL, real raids.
 
-To get started, switch your wallet to Devnet and get free test SOL from the [Solana Faucet](https://faucet.solana.com/).
+🔗 **Launch App:** [raid.based-bot.fun](https://raid.based-bot.fun/)
 {% endhint %}
 
 ## 🎯 What is BasedRaid?
@@ -45,17 +45,20 @@ BasedRaid is a **trustless recovery protocol** for Community Takeovers (CTOs) on
 
 | Property          | Value                                          |
 | ----------------- | ---------------------------------------------- |
-| 🌐 **Network**    | Solana Devnet                                  |
-| 🔑 **Program ID** | `25dddnPNo5qYi21TehUKR6eF24ZdvVJHy7nmFzEf3Tjg` |
+| 🌐 **Network**    | Solana Mainnet                                 |
+| 🔗 **App URL**    | [raid.based-bot.fun](https://raid.based-bot.fun/) |
 
 ## 💰 Fee Structure
 
-| Fee Type              | Amount           |
-| --------------------- | ---------------- |
-| 📦 **Creation Fee**   | 0.02 SOL         |
-| ✅ **Verified Badge**  | 0.1 SOL          |
-| ⭐ **Sponsored Boost** | 0.05 SOL         |
-| 💸 **Withdrawal Fee** | 5% (3% verified) |
+All fees are based on your **$BASEDBOT holder tier**:
+
+| Tier | $BASEDBOT | Creation | Verified | Boost | Withdrawal |
+| ---- | --------- | -------- | -------- | ----- | ---------- |
+| 🐋 **Whale** | 10M+ | **FREE** | **FREE** | **FREE** | **1%** |
+| 🦍 **Based Ape** | 1M+ | **FREE** | **FREE** | **FREE** | **2%** |
+| 💎 **Diamond Hands** | 500K+ | ◎0.01 | ◎0.05 | ◎0.03 | **3%** |
+| 🌱 **Seedling** | 100K+ | ◎0.015 | ◎0.08 | ◎0.04 | **4%** |
+| 🎰 **Degen** | <100K | ◎0.02 | ◎0.1 | ◎0.05 | **5%** |
 
 ## 📚 Quick Links
 
