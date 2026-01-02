@@ -46,13 +46,16 @@ The Trust Score is now dynamic, reacting to live market behavior:
 
 | Metric | Bonus/Penalty | Condition |
 | :--- | :--- | :--- |
-| **Base Score** | 0-50 | Based on Authority status (Mint/Freeze) |
-| **Holder Health** | **±5 pts** | Based on ratio of Fish/Dolphins vs Whales |
-| **Holder Trend** | **±5 pts** | Rewards rapid growth (>20 wallets) |
-| **Whale Risk** | **+3 / -5 pts** | Penalizes if >10 whales control supply |
-| **RugCheck** | **±10 pts** | Boosts for "Good" audits, penalizes "Danger" |
-| **Token Age** | **-15 pts** | Applies if token is < 24 hours old |
-| **Low Liquidity** | **-10 pts** | Applies if liquidity < $5,000 USD |
+| **Base Score** | +50 pts | Starting score for all tokens |
+| **Mint Authority Revoked** | +25 pts | Token supply cannot be inflated |
+| **Freeze Authority Revoked** | +15 pts | Holders cannot be frozen |
+| **Concentration Penalty** | -1 pt per % | Applied if Top 20 (excl LP) > 40% |
+| **Holder Health** | ±5 pts | Based on Fish/Dolphin vs Whale ratio |
+| **Holder Trend** | ±5 pts | Rewards growth >20 wallets, penalizes exodus |
+| **Whale Risk** | +3 / -5 pts | Penalizes if >10 whales control supply |
+| **RugCheck Audit** | ±10 pts | Boosts "Good" audits, penalizes "Danger" |
+| **Token Age Penalty** | -15 pts | Applies if token is < 24 hours old |
+| **Low Liquidity Penalty** | -10 pts | Applies if liquidity < $5,000 USD |
 
 ## 🚦 Risk Thresholds
 
