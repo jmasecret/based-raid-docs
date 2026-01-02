@@ -24,7 +24,7 @@ Consult Oracle is BasedBot's on-chain intelligence system. Paste any Solana toke
 | 📊 **Raidability Score** | 0-100 score indicating token safety |
 | 🔒 **Mint Authority**    | Check if minting is disabled        |
 | ❄️ **Freeze Authority**  | Check if freezing is disabled       |
-| 🤖 **AI Verdict**        | BasedBot's poetic risk assessment   |
+| 🤖 **AI Verdict**        | Poetic assessment using Pro data    |
 
 ## 🦍 PRO Report Features (Ape & Whale Only)
 
@@ -32,17 +32,45 @@ PRO Report unlocks deep analytics that reveal what others can't see:
 
 | Feature                      | Description                              |
 | ---------------------------- | ---------------------------------------- |
-| 📈 **Top 10 Holders %**      | Concentration of top 10 non-LP holders   |
+| 🏥 **Holder Health**         | Fish/Dolphin ratio vs Whales             |
+| 📈 **Holder Trend**          | 24h wallet growth/decline                |
+| 🛡️ **Whale Risk**           | Penalty for high whale concentration     |
+| ✅ **RugCheck Audit**        | External security audit integration      |
+| 💰 **Market Data**           | Live price, market cap, 24h volume       |
 | 👨‍💻 **Developer Holdings** | Current % held by the token creator      |
 | 🎯 **Bundle Detection**      | Identifies coordinated wallet clusters   |
-| 🐳 **Whale Activity**        | Accumulating, Dumping, or Holding status |
-| ✅ **RugCheck Audit**         | External security audit integration      |
-| 💰 **Market Data**           | Live price, market cap, 24h volume       |
-| 📊 **DEXScreener Link**      | Direct chart access                      |
+
+## 🧮 Trust Score Breakdown (New)
+
+The Trust Score is now dynamic, reacting to live market behavior:
+
+| Metric | Bonus/Penalty | Condition |
+| :--- | :--- | :--- |
+| **Base Score** | 0-50 | Based on Authority status (Mint/Freeze) |
+| **Holder Health** | **±5 pts** | Based on ratio of Fish/Dolphins vs Whales |
+| **Holder Trend** | **±5 pts** | Rewards rapid growth (>20 wallets) |
+| **Whale Risk** | **+3 / -5 pts** | Penalizes if >10 whales control supply |
+| **RugCheck** | **±10 pts** | Boosts for "Good" audits, penalizes "Danger" |
 
 ## 🚦 Risk Thresholds
 
-### Top 10 Holders %
+### Holder Health Score
+
+| Color    | Range | Status         | Effect |
+| -------- | ----- | -------------- | ------ |
+| 🟢 Green | ≥ 60% | Healthy        | +5 Pts |
+| ⚪ Gray  | 40-59%| Neutral        | 0 Pts  |
+| 🔴 Red   | < 40% | Whale Dominated| -5 Pts |
+
+### 24h Holder Trend
+
+| Color    | Range        | Status    | Effect |
+| -------- | ------------ | --------- | ------ |
+| 🟢 Green | > +20 wallets| Growth    | +5 Pts |
+| ⚪ Gray  | ±20 wallets  | Stable    | 0 Pts  |
+| 🔴 Red   | < -20 wallets| Dumping   | -5 Pts |
+
+### Top 10 Holders % (Concentration)
 
 | Color    | Range  | Risk Level               |
 | -------- | ------ | ------------------------ |
@@ -57,13 +85,6 @@ PRO Report unlocks deep analytics that reveal what others can't see:
 | 🟢 Green | < 2%  | Fair launch standard  |
 | 🟡 Amber | 2-5%  | Acceptable allocation |
 | 🔴 Red   | > 5%  | High dump risk        |
-
-### Bundlers %
-
-| Color    | Range | Risk Level                |
-| -------- | ----- | ------------------------- |
-| 🟢 Green | 0%    | No bundles detected       |
-| 🟡 Amber | > 0%  | Coordinated wallets found |
 
 ## 🔧 How It Works
 
@@ -95,19 +116,26 @@ Read the verdict and PRO metrics (if eligible).
 
 ## 🛠️ Technical Details
 
-The Oracle analyzes:
+The Oracle integrates multiple data sources for comprehensive analysis:
 
-* **Top 20 Holders** - Fetched directly from Solana RPC
-* **LP Detection** - Identifies Raydium, Orca, Meteora, Pump.fun pools
-* **Developer Wallet** - Found via Genesis Walk (first transaction signer)
-* **Bundle Analysis** - Traces funding sources of top holders
-* **Whale Sentiment** - Analyzes recent transaction patterns
+| Source | Data Provided |
+| --- | --- |
+| **HolderScan API** | Holder distribution, trends, whale counts |
+| **RugCheck API** | Security audits, risk flags |
+| **Solana RPC** | Authority checks, supply data |
+| **Bundle Analysis** | Coordinated wallet detection |
 
-## 💡 Tips
+### 🔄 Loading Bar
 
-* **41.7% != 28.33%?** - The Oracle excludes LP/bonding curve addresses from holder calculations
-* **Dev H. 0%?** - The developer may have sold all holdings
-* **Slow Analysis?** - High-activity tokens require deeper chain traversal
+A synchronized progress bar tracks the analysis in real-time:
+-   **0-90%**: Simulates processing speed based on data complexity.
+-   **100%**: Snaps to completion when results are ready.
+
+### 💡 Tips
+
+*   **41.7% != 28.33%?** - The Oracle excludes LP/bonding curve addresses from concentration calculations.
+*   **Trend 0?** - Small fluctuations (<20 wallets) are considered neutral.
+*   **Slow Analysis?** - High-activity tokens require deeper chain traversal.
 
 ## 🌐 Network
 
