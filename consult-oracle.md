@@ -37,7 +37,7 @@ PRO Report unlocks deep analytics that reveal what others can't see:
 | 🛡️ **Whale Risk**           | Penalty for high whale concentration     |
 | ✅ **RugCheck Audit**        | External security audit integration      |
 | 💰 **Market Data**           | Live price, market cap, 24h volume       |
-| 👨‍💻 **Developer Holdings** | Current % held by the token creator      |
+| 👨‍💻 **Dev Holding (Grid)**  | Developer % shown in metrics grid        |
 | 🎯 **Bundle Detection**      | Identifies coordinated wallet clusters   |
 
 ## 🧮 Trust Score Breakdown (New)
@@ -51,6 +51,8 @@ The Trust Score is now dynamic, reacting to live market behavior:
 | **Holder Trend** | **±5 pts** | Rewards rapid growth (>20 wallets) |
 | **Whale Risk** | **+3 / -5 pts** | Penalizes if >10 whales control supply |
 | **RugCheck** | **±10 pts** | Boosts for "Good" audits, penalizes "Danger" |
+| **Token Age** | **-15 pts** | Applies if token is < 24 hours old |
+| **Low Liquidity** | **-10 pts** | Applies if liquidity < $5,000 USD |
 
 ## 🚦 Risk Thresholds
 
