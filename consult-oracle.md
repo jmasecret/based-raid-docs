@@ -85,11 +85,17 @@ The Trust Score is now dynamic, reacting to live market behavior:
 
 ### Developer Holdings %
 
-| Color    | Range | Risk Level            |
-| -------- | ----- | --------------------- |
-| 🟢 Green | < 2%  | Fair launch standard  |
-| 🟡 Amber | 2-5%  | Acceptable allocation |
-| 🔴 Red   | > 5% or 0% | High dump risk / Already sold |
+Displays the token creator's current holdings. **Now impacts trust score.**
+
+| Range | Color | Risk Level | Score Impact |
+| ----- | ----- | ---------- | ------------ |
+| 0% | 🔴 Red | Abandoned (sold everything) | -5 pts |
+| < 2% | 🟢 Green | Fair launch standard | +5 pts |
+| 2-5% | 🟡 Amber | Acceptable allocation | 0 pts |
+| 5-10% | 🟠 Orange | Moderate dump risk | -5 pts |
+| > 10% | 🔴 Red | High dump risk | -10 pts |
+
+*Dev holdings of 0% can indicate abandoned project. Very high holdings pose significant dump risk.*
 
 ### Token Age (Anti-Rug)
 
