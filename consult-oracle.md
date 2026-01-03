@@ -89,7 +89,45 @@ The Trust Score is now dynamic, reacting to live market behavior:
 | -------- | ----- | --------------------- |
 | 🟢 Green | < 2%  | Fair launch standard  |
 | 🟡 Amber | 2-5%  | Acceptable allocation |
-| 🔴 Red   | > 5%  | High dump risk        |
+| 🔴 Red   | > 5% or 0% | High dump risk / Already sold |
+
+### Token Age (Anti-Rug)
+
+| Age | Status | Effect |
+| --- | --- | --- |
+| < 24 hours | ⚠️ New Token | -15 pts |
+| ≥ 24 hours | ✅ Established | No penalty |
+
+*New tokens are higher risk due to lack of price history and potential rug mechanics.*
+
+### Liquidity Depth (Anti-Rug)
+
+| Liquidity | Status | Effect |
+| --- | --- | --- |
+| < $5,000 | 🔴 Thin | -10 pts |
+| ≥ $5,000 | ✅ Safe | No penalty |
+
+*Low liquidity makes it easy for large holders to dump and crash the price.*
+
+### RugCheck Audit
+
+| Rating | Effect | Meaning |
+| --- | --- | --- |
+| Good | +10 pts | Passed security checks |
+| Warning | 0 pts | Minor issues detected |
+| Danger | -10 pts | Critical risks identified |
+
+*Powered by [RugCheck.xyz](https://rugcheck.xyz) security audits.*
+
+### Whale Risk
+
+| Whales >1% | Status | Effect |
+| --- | --- | --- |
+| 0 wallets | ✅ Decentralized | +3 pts |
+| 1-10 wallets | ⚪ Moderate | 0 pts |
+| > 10 wallets | 🔴 High Risk | -5 pts |
+
+*Many wallets holding >1% of supply increases dump coordination risk.*
 
 ## 🔧 How It Works
 
@@ -141,6 +179,15 @@ A synchronized progress bar tracks the analysis in real-time:
 *   **41.7% != 28.33%?** - The Oracle excludes LP/bonding curve addresses from concentration calculations.
 *   **Trend 0?** - Small fluctuations (<20 wallets) are considered neutral.
 *   **Slow Analysis?** - High-activity tokens require deeper chain traversal.
+
+## ⚠️ Known Limitations
+
+| Limitation | Reason | Workaround |
+| --- | --- | --- |
+| **Copycat/Clone Detection** | Requires custom indexer for token metadata history (name/symbol/image comparison) | Verify CA against official project channels |
+| **Historical Bundlers** | Only detects bundlers who still hold; sold bundlers not tracked | Use Axiom/BubbleMaps for historical data |
+
+> **Note:** These features require infrastructure (custom indexers) beyond our current resources. On the roadmap as we scale.
 
 ## 🌐 Network
 
