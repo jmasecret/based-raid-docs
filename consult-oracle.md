@@ -56,6 +56,8 @@ The Trust Score is now dynamic, reacting to live market behavior:
 | **RugCheck Audit** | ±10 pts | Boosts "Good" audits, penalizes "Danger" |
 | **Token Age Penalty** | -15 pts | Applies if token is < 24 hours old |
 | **Low Liquidity Penalty** | -10 pts | Applies if liquidity < $5,000 USD |
+| **Dev Holdings** | +5 to -10 pts | Based on developer wallet percentage |
+| **Bundle Detected** | -10 to -20 pts | Coordinated wallet clusters detected |
 
 ## 🚦 Risk Thresholds
 
