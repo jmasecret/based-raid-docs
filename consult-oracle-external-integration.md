@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 📔 Consult Oracle External Integration
 
 Integrate Consult Oracle into your project using the x402 protocol or $BASEDBOT token-gating.
