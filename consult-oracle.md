@@ -7,6 +7,7 @@ The AI-powered token analysis tool for $BASEDBOT holders.
 
 * 🔐 **Basic Access:** Hold any amount of $BASEDBOT tokens
 * 🦍🐳 **PRO Report:** Based Ape (1M+) or Whale (10M+) tier holders
+* ⚡ **Paid PRO:** Pay 0.10 USDC per analysis ([Learn more](pro-upgrade.md))
 {% endhint %}
 
 ## What is Consult Oracle?
