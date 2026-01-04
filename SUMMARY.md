@@ -11,6 +11,7 @@
 * [🔄 Refunds](refunds.md)
 * [🏆 Creator Incentives](creator-incentives.md)
 * [🪬 Consult Oracle](consult-oracle.md)
+* [⤴️ PRO Upgrade](pro-upgrade.md)
 * [🔒 Security](security.md)
 * [⚙️ Smart Contract](smart-contract.md)
-* [SUMMARY](summary.md)
+* [📚 SUMMARY](summary.md)
