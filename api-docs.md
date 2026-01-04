@@ -29,9 +29,9 @@ The x402 flow:
 3. Encode the signed TX in the `X-PAYMENT` header
 4. Retry the request → receive analysis result
 
-### Token Gate (Free for Holders)
+### Token Gate (Free for Holders) - Signature Required
 
-$BASEDBOT holders get free access based on their tier:
+$BASEDBOT holders get free access based on their tier. **Wallet ownership must be proven via signature.**
 
 | Tier | Requirement | Access |
 | :--- | :--- | :--- |
@@ -41,7 +41,52 @@ $BASEDBOT holders get free access based on their tier:
 | 🌱 **Seedling** | 100K+ $BASEDBOT | Basic + 5 req/min |
 | 🎰 **Degen** | Any amount | Basic + 5 req/min |
 
+#### Challenge-Response Flow
+
+To prevent abuse, you must prove wallet ownership:
+
+```mermaid
+sequenceDiagram
+    Client->>API: GET /challenge?wallet=ABC
+    API-->>Client: { nonce, message, expiresIn }
+    Client->>Client: Sign message with wallet
+    Client->>API: GET /analyze + X-WALLET + X-WALLET-SIG
+    API-->>Client: { analysis: ... }
+```
+
+**Step 1: Request Challenge**
+```bash
+curl "https://raid.based-bot.fun/api/oracle/v1/challenge?wallet=YOUR_WALLET"
+```
+
+Response:
+```json
+{
+  "nonce": "abc123...",
+  "message": "Oracle API Access\nNonce: abc123...\nWallet: YOUR_WALLET",
+  "expiresIn": 300
+}
+```
+
+**Step 2: Sign the Message**
+Sign the `message` field with your Solana wallet (ed25519 signature).
+
+**Step 3: Send Signed Request**
+```bash
+curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS" \
+  -H "X-WALLET: YOUR_WALLET" \
+  -H "X-WALLET-SIG: BASE64_ENCODED_SIGNATURE"
+```
+
 ## Endpoints
+
+### GET `/api/oracle/v1/challenge`
+
+Generate a challenge nonce for wallet signature verification.
+
+| Parameter | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `wallet` | string | Yes | Wallet address to verify |
 
 ### GET `/api/oracle/v1/analyze`
 
@@ -59,14 +104,8 @@ Analyze a Solana token contract address.
 | Header | Required | Description |
 | :--- | :--- | :--- |
 | `X-WALLET` | No | User wallet for tier check |
+| `X-WALLET-SIG` | If X-WALLET | Base64-encoded signature of challenge message |
 | `X-PAYMENT` | No | Base64-encoded x402 payment payload |
-
-#### Example Request
-
-```bash
-curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS" \
-  -H "X-WALLET: YourSolanaWalletAddress"
-```
 
 ---
 
