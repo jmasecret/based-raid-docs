@@ -266,6 +266,46 @@ The API supports CORS for browser-based integrations. Preflight (`OPTIONS`) requ
 
 ---
 
+## Integration Guide
+
+Choose your integration method based on your use case:
+
+| Use Case | Recommended Method | UI Needed? |
+| :--- | :--- | :--- |
+| **Telegram/Discord Bot** | x402 Payment | ❌ No |
+| **Backend API Service** | x402 Payment | ❌ No |
+| **Frontend dApp** | Token-Gate | ✅ Yes (wallet popup) |
+| **CLI Tool** | x402 Payment | ❌ No |
+
+### For Bots & Backend Services (x402)
+
+No UI required. Sign USDC transactions programmatically:
+
+```javascript
+// Node.js example
+import { Keypair, Connection } from '@solana/web3.js';
+
+const keypair = Keypair.fromSecretKey(YOUR_PRIVATE_KEY);
+// 1. Call /analyze without payment → get 402 with payment details
+// 2. Sign USDC transfer to treasury (do NOT broadcast)
+// 3. Retry with X-PAYMENT header containing base64 encoded signed tx
+```
+
+### For Frontend dApps (Token-Gate)
+
+Requires wallet-adapter UI for user to sign challenge:
+
+```javascript
+// React example with wallet-adapter
+const { publicKey, signMessage } = useWallet();
+
+// 1. Fetch challenge: GET /challenge?wallet=...
+// 2. User signs message via wallet popup
+// 3. Send all 3 headers: X-WALLET, X-WALLET-SIG, X-CHALLENGE-TOKEN
+```
+
+---
+
 {% hint style="info" %}
 **Integration Support**
 Need help integrating? Find us on [Twitter/X](https://x.com/basedbotsol).
