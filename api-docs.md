@@ -164,16 +164,88 @@ Analyze a Solana token contract address.
 }
 ```
 
-### PRO Report Response
+### PRO Report Response (0.10 USDC or 1M+ $BASEDBOT)
 
-PRO includes everything in Basic, plus:
-- Score breakdown with all bonuses/penalties
-- Top holders with addresses
-- Whale activity tracking
-- Bundle/snipe detection
-- Developer holdings
-- RugCheck audit data
-- Holder trend deltas
+PRO includes everything in Basic, plus deep analytics:
+
+```json
+{
+  "success": true,
+  "tier": "Based Ape",
+  "proAccess": true,
+  "analysis": {
+    "score": 85,
+    "verdict": "The oracle sees strength in this one...",
+    "safety": {
+      "mintAuthorityDisabled": true,
+      "freezeAuthorityDisabled": true,
+      "topHoldersSafe": true,
+      "topHoldersPercent": 15.2
+    },
+    "tokenInfo": {
+      "name": "Example Token",
+      "symbol": "EX",
+      "supply": "1000000000",
+      "decimals": 6
+    },
+    "holderCount": 5420,
+    "scoreBreakdown": {
+      "base": 50,
+      "mintAuthority": 25,
+      "freezeAuthority": 15,
+      "concentration": -5,
+      "holderHealth": 5,
+      "holderTrend": 3,
+      "whaleRisk": 0,
+      "rugCheckBonus": 10,
+      "tokenAgePenalty": 0,
+      "liquidityPenalty": 0,
+      "bundlePenalty": -10,
+      "devHoldingPenalty": -3,
+      "total": 90
+    },
+    "holderStats": {
+      "topHolders": [
+        { "address": "ABC...", "percent": 5.2, "isLP": true },
+        { "address": "DEF...", "percent": 3.1 }
+      ],
+      "whaleCount": 3,
+      "lpCount": 2,
+      "concentration": 18.5,
+      "concentrationExcludingLP": 12.3,
+      "priceUsd": "0.0042",
+      "marketCap": "4200000",
+      "volume24h": "150000",
+      "priceChange24h": 12.5,
+      "developerHolding": {
+        "address": "GHI...",
+        "percent": 2.1,
+        "found": true
+      },
+      "bundleAnalysis": {
+        "isBundled": true,
+        "bundleSize": 5,
+        "holdingPercent": 8.3,
+        "funderAddress": "JKL..."
+      },
+      "whaleActivity": {
+        "status": "Accumulating",
+        "netChange": 2.5,
+        "txCount": 12
+      },
+      "rugCheck": {
+        "score": 85,
+        "rating": "Good",
+        "risks": []
+      },
+      "holderDeltas": {
+        "h24": 120,
+        "d7": 450
+      }
+    }
+  }
+}
+```
 
 ---
 
