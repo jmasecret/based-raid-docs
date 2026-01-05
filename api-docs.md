@@ -134,6 +134,28 @@ Analyze a Solana token contract address.
 | `X-CHALLENGE-TOKEN` | If X-WALLET | Token received from challenge endpoint |
 | `X-PAYMENT` | For x402 | Signed USDC payment (bypasses signature requirement) |
 
+#### Example Requests
+
+**Basic Analysis (x402 Payment):**
+```bash
+curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS" \
+  -H "X-PAYMENT: BASE64_SIGNED_TX"
+```
+
+**PRO Report (x402 Payment):**
+```bash
+curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS&pro=true" \
+  -H "X-PAYMENT: BASE64_SIGNED_TX"
+```
+
+**Token-Gate Request (requires signature):**
+```bash
+curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS" \
+  -H "X-WALLET: YOUR_WALLET" \
+  -H "X-WALLET-SIG: BASE64_SIGNATURE" \
+  -H "X-CHALLENGE-TOKEN: TOKEN_FROM_CHALLENGE"
+```
+
 ---
 
 ## Response Schemas
