@@ -15,4 +15,3 @@
 * [📔 Consult Oracle API Docs](consult-oracle-api-docs.md)
 * [🔒 Security](security.md)
 * [⚙️ Smart Contract](smart-contract.md)
-* [📚 SUMMARY](summary.md)
