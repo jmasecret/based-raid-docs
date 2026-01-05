@@ -398,5 +398,5 @@ const { publicKey, signMessage } = useWallet();
 ***
 
 {% hint style="info" %}
-Integration Support Need help integrating? Find us on [Twitter/X](https://x.com/basedbotsol).
+Integration Support Need help integrating? Find us on [Twitter/X](https://x.com/BasedBotSoul).
 {% endhint %}
