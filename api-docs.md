@@ -8,30 +8,48 @@ Integrate Consult Oracle into your project using the x402 protocol or $BASEDBOT 
 https://raid.based-bot.fun/api/oracle/v1/analyze
 ```
 
-## Authentication
+## Authentication Methods
 
-The Oracle API is fully decentralized with two authentication methods:
+The Oracle API supports two authentication methods. **x402 Payment takes priority** - if a payment is provided, wallet signature is not required.
 
-| Method | Header | Description |
+| Method | Headers Required | Description |
 | :--- | :--- | :--- |
-| **x402 Payment** | `X-PAYMENT` | Pay-per-use with USDC (trustless) |
-| **Token Gate** | `X-WALLET` | Free for $BASEDBOT holders |
+| **x402 Payment** | `X-PAYMENT` | Pay-per-use with USDC (recommended for integrations) |
+| **Token Gate** | `X-WALLET` + `X-WALLET-SIG` + `X-CHALLENGE-TOKEN` | Free for $BASEDBOT holders |
 
-### x402 Payment (Recommended for Integrations)
+---
 
-For pay-per-use access, send a signed USDC transaction via the x402 protocol:
+## Method 1: x402 Payment (Recommended)
+
+For pay-per-use access, no wallet signature is needed. Just pay with USDC.
+
+### Pricing
 - **Basic Analysis:** 0.05 USDC
 - **PRO Report:** 0.10 USDC
 
-The x402 flow:
-1. Make a request without payment → receive `402 Payment Required` with payment details
+### The x402 Flow
+1. Make a request without payment → receive `402 Payment Required`
 2. Sign a USDC transfer transaction (do NOT broadcast)
 3. Encode the signed TX in the `X-PAYMENT` header
 4. Retry the request → receive analysis result
 
-### Token Gate (Free for Holders) - Signature Required
+```bash
+# Step 1: Get payment requirements
+curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS"
+# Returns 402 with payment details
 
-$BASEDBOT holders get free access based on their tier. **Wallet ownership must be proven via signature.**
+# Step 2: After signing USDC transfer
+curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS" \
+  -H "X-PAYMENT: BASE64_ENCODED_PAYMENT"
+```
+
+---
+
+## Method 2: Token Gate (Free for Holders)
+
+$BASEDBOT holders get free access based on their tier. **Wallet ownership must be proven via challenge-response signature.**
+
+### Tier Requirements
 
 | Tier | Requirement | Access |
 | :--- | :--- | :--- |
@@ -41,20 +59,23 @@ $BASEDBOT holders get free access based on their tier. **Wallet ownership must b
 | 🌱 **Seedling** | 100K+ $BASEDBOT | Basic + 5 req/min |
 | 🎰 **Degen** | Any amount | Basic + 5 req/min |
 
-#### Challenge-Response Flow
+### Challenge-Response Flow
 
-To prevent abuse, you must prove wallet ownership:
+To prevent wallet spoofing, you must prove ownership via signature:
 
 ```mermaid
 sequenceDiagram
+    participant Client
+    participant API
     Client->>API: GET /challenge?wallet=ABC
-    API-->>Client: { nonce, message, expiresIn }
+    API-->>Client: { token, nonce, message }
     Client->>Client: Sign message with wallet
-    Client->>API: GET /analyze + X-WALLET + X-WALLET-SIG
+    Client->>API: GET /analyze + headers
+    Note over Client,API: X-WALLET, X-WALLET-SIG, X-CHALLENGE-TOKEN
     API-->>Client: { analysis: ... }
 ```
 
-**Step 1: Request Challenge**
+### Step 1: Request Challenge
 ```bash
 curl "https://raid.based-bot.fun/api/oracle/v1/challenge?wallet=YOUR_WALLET"
 ```
@@ -62,27 +83,32 @@ curl "https://raid.based-bot.fun/api/oracle/v1/challenge?wallet=YOUR_WALLET"
 Response:
 ```json
 {
+  "success": true,
+  "token": "eyABCDEF...",
   "nonce": "abc123...",
   "message": "Oracle API Access\nNonce: abc123...\nWallet: YOUR_WALLET",
   "expiresIn": 300
 }
 ```
 
-**Step 2: Sign the Message**
-Sign the `message` field with your Solana wallet (ed25519 signature).
+### Step 2: Sign the Message
+Sign the `message` field with your Solana wallet (ed25519 signature), then base64 encode.
 
-**Step 3: Send Signed Request**
+### Step 3: Send Signed Request
 ```bash
 curl "https://raid.based-bot.fun/api/oracle/v1/analyze?ca=TOKEN_ADDRESS" \
   -H "X-WALLET: YOUR_WALLET" \
-  -H "X-WALLET-SIG: BASE64_ENCODED_SIGNATURE"
+  -H "X-WALLET-SIG: BASE64_ENCODED_SIGNATURE" \
+  -H "X-CHALLENGE-TOKEN: eyABCDEF..."
 ```
+
+---
 
 ## Endpoints
 
 ### GET `/api/oracle/v1/challenge`
 
-Generate a challenge nonce for wallet signature verification.
+Generate a challenge for wallet signature verification. Returns a stateless token valid for 5 minutes.
 
 | Parameter | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -97,21 +123,22 @@ Analyze a Solana token contract address.
 | Parameter | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `ca` | string | Yes | Token contract address |
-| `pro` | boolean | No | Request PRO analysis (requires payment or tier) |
+| `pro` | boolean | No | Request PRO analysis |
 
 #### Headers
 
 | Header | Required | Description |
 | :--- | :--- | :--- |
-| `X-WALLET` | No | User wallet for tier check |
-| `X-WALLET-SIG` | If X-WALLET | Base64-encoded signature of challenge message |
-| `X-PAYMENT` | No | Base64-encoded x402 payment payload |
+| `X-WALLET` | For token-gate | User wallet address |
+| `X-WALLET-SIG` | If X-WALLET | Base64 signature of challenge message |
+| `X-CHALLENGE-TOKEN` | If X-WALLET | Token received from challenge endpoint |
+| `X-PAYMENT` | For x402 | Signed USDC payment (bypasses signature requirement) |
 
 ---
 
 ## Response Schemas
 
-### Basic Analysis Response (0.05 USDC or any $BASEDBOT)
+### Basic Analysis Response
 
 ```json
 {
@@ -137,115 +164,29 @@ Analyze a Solana token contract address.
 }
 ```
 
-### PRO Report Response (0.10 USDC or 1M+ $BASEDBOT)
+### PRO Report Response
 
-PRO includes everything in Basic, plus deep analytics:
-
-```json
-{
-  "success": true,
-  "tier": "Based Ape",
-  "proAccess": true,
-  "analysis": {
-    "score": 85,
-    "verdict": "The oracle sees strength in this one...",
-    "safety": { ... },
-    "tokenInfo": { ... },
-    "holderCount": 5420,
-    "scoreBreakdown": {
-      "base": 50,
-      "mintAuthority": 25,
-      "freezeAuthority": 15,
-      "concentration": -5,
-      "holderHealth": 5,
-      "holderTrend": 3,
-      "whaleRisk": 0,
-      "rugCheckBonus": 10,
-      "tokenAgePenalty": 0,
-      "liquidityPenalty": 0,
-      "bundlePenalty": -10,
-      "devHoldingPenalty": -3,
-      "total": 90
-    },
-    "holderStats": {
-      "topHolders": [
-        { "address": "ABC...", "percent": 5.2, "isLP": true },
-        { "address": "DEF...", "percent": 3.1 }
-      ],
-      "whaleCount": 3,
-      "lpCount": 2,
-      "concentration": 18.5,
-      "concentrationExcludingLP": 12.3,
-      "priceUsd": "0.0042",
-      "marketCap": "4200000",
-      "volume24h": "150000",
-      "priceChange24h": 12.5,
-      "developerHolding": {
-        "address": "GHI...",
-        "percent": 2.1,
-        "found": true
-      },
-      "bundleAnalysis": {
-        "isBundled": true,
-        "bundleSize": 5,
-        "holdingPercent": 8.3,
-        "funderAddress": "JKL..."
-      },
-      "whaleActivity": {
-        "status": "Accumulating",
-        "netChange": 2.5,
-        "txCount": 12
-      },
-      "rugCheck": {
-        "score": 85,
-        "rating": "Good",
-        "risks": []
-      },
-      "holderDeltas": {
-        "h24": 120,
-        "d7": 450
-      }
-    }
-  }
-}
-```
+PRO includes everything in Basic, plus:
+- Score breakdown with all bonuses/penalties
+- Top holders with addresses
+- Whale activity tracking
+- Bundle/snipe detection
+- Developer holdings
+- RugCheck audit data
+- Holder trend deltas
 
 ---
-
-## Pricing Summary
-
-| Tier | Cost | Access Level |
-| :--- | :--- | :--- |
-| **Basic Analysis** | 0.05 USDC | Score, verdict, safety checks |
-| **PRO Report** | 0.10 USDC | + Whale tracking, bundles, dev holdings, holder trends |
-| **Token Gate (Ape/Whale)** | FREE | Full PRO access |
-
----
-
-## 402 Payment Required Response
-
-If payment is needed, you'll receive:
-
-```json
-{
-  "error": "Payment required",
-  "paymentRequired": {
-    "amount": "50000",
-    "asset": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-    "payTo": "6GVSrRoEcLkMLHddEq59PGQdWLBPg3jXMECZCfMz7QBB",
-    "description": "Oracle Analysis API"
-  }
-}
-```
 
 ## Error Codes
 
-| Code | Description |
-| :--- | :--- |
-| 400 | Invalid contract address |
-| 402 | Payment required |
-| 429 | Rate limit exceeded |
-| 500 | Internal server error |
+| Code | Error | Description |
+| :--- | :--- | :--- |
+| 400 | Invalid address | Contract address format is invalid |
+| 401 | Signature required | Missing wallet signature for token-gate |
+| 401 | Invalid token | Challenge token expired or invalid |
+| 402 | Payment required | Need x402 payment or token holdings |
+| 429 | Rate limit exceeded | Wait for rate limit reset |
+| 500 | Internal error | Server-side issue |
 
 ## CORS
 
@@ -255,5 +196,5 @@ The API supports CORS for browser-based integrations. Preflight (`OPTIONS`) requ
 
 {% hint style="info" %}
 **Integration Support**
-Need help integrating? Join our community on [Twitter/X](https://x.com/basedbotsol).
+Need help integrating? Find us on [Twitter/X](https://x.com/basedbotsol).
 {% endhint %}
