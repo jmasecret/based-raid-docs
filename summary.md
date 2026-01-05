@@ -1,6 +1,6 @@
-# Table of contents
+# 📚 SUMMARY
 
-* [🚀 Getting Started](README.md)
+* [🚀 Getting Started](./)
 * [🧊 BasedRaid Documentation](basedraid-documentation.md)
 * [🎯 Creating Raids](creating-raids.md)
 * [💸 Donating to Raids](donating.md)
@@ -11,8 +11,8 @@
 * [🔄 Refunds](refunds.md)
 * [🏆 Creator Incentives](creator-incentives.md)
 * [🪬 Consult Oracle](consult-oracle.md)
-  * [⤴️ PRO Upgrade](pro-upgrade.md)
-* [🔌 Consult Oracle API Docs](api-docs.md)
+* [⤴️ PRO Upgrade](pro-upgrade.md)
+* [🔌 Consult Oracle API Docs](consult-oracle-api-docs.md)
 * [🔒 Security](security.md)
 * [⚙️ Smart Contract](smart-contract.md)
 * [📚 SUMMARY](summary.md)

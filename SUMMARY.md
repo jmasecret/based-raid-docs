@@ -12,7 +12,7 @@
 * [🏆 Creator Incentives](creator-incentives.md)
 * [🪬 Consult Oracle](consult-oracle.md)
 * [⤴️ PRO Upgrade](pro-upgrade.md)
-* [📔 Consult Oracle External Integration](consult-oracle-external-integration.md)
+* [📔 Consult Oracle API Docs](consult-oracle-api-docs.md)
 * [🔒 Security](security.md)
 * [⚙️ Smart Contract](smart-contract.md)
 * [📚 SUMMARY](summary.md)
