@@ -154,15 +154,29 @@ Enter any Solana token contract address.
 {% endstep %}
 
 {% step %}
+### Sign to Verify (Diamond Hands & Below)
+
+If you're below Based Ape tier, you'll be prompted to **sign a message** with your wallet. This proves you own the wallet and prevents abuse.
+
+> 🐋🦍 **Whale & Based Ape tiers skip this step** - you get instant PRO access.
+{% endstep %}
+
+{% step %}
 ### Analyze
 
 The Oracle scans on-chain data in real-time.
 {% endstep %}
 
 {% step %}
+### Upgrade to PRO (Optional)
+
+Lower tiers can upgrade to PRO Report for **0.10 USDC**. Pay via x402 - no wallet signature needed for payment.
+{% endstep %}
+
+{% step %}
 ### Review
 
-Read the verdict and PRO metrics (if eligible).
+Read the verdict and PRO metrics (if eligible or purchased).
 {% endstep %}
 {% endstepper %}
 
